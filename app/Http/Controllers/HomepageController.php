@@ -15,6 +15,8 @@ class HomepageController extends Controller
     public function index(){
     	//$institucion = Institucion::where('nombre','Comedor San Antonio')->first();
     	$instituciones = Institucion::all();
-    	return view('welcome',compact('instituciones'));
+    	$avisos = Aviso::all();
+    	return view('welcome',compact('instituciones', 'avisos'));
+
     }
 }

@@ -35,7 +35,7 @@ class InstitucionTableSeeder extends Seeder
             'mision' => "tyutyutyut",
             "vision" => "rttyhdfghasdsdfsdfgdf"
         ));
-        $this->command->info('Institucion creada.');
+        $this->command->info('Institucion 2 creada.');
 
     }
 }

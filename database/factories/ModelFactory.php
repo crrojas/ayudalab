@@ -31,3 +31,13 @@ $factory->define(App\Aviso::class, function (Faker\Generator $faker){
  		'rut_inst' => $institucion->rut_inst
 	];
 });
+
+$factory->define(App\Aviso::class, function (Faker\Generator $faker){
+	$institucion = Institucion::where('rut_inst','=','92.164.732-1')->first();
+	return[
+ 		'titulo' => $faker->sentence(5),
+ 		'descripcion' => $faker->sentence(15),
+ 		'img' => $faker->word,
+ 		'rut_inst' => $institucion->rut_inst
+	];
+});
