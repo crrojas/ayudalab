@@ -20,7 +20,7 @@ class CrearTablaAviso extends Migration
             $table->string('rut_inst');
             $table->foreign('rut_inst')->references('rut_inst')->on('institucion');
             $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('user');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
 
         });
