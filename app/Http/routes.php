@@ -11,4 +11,6 @@
 |
 */
 
+
 Route::get('/', 'HomepageController@index');
+

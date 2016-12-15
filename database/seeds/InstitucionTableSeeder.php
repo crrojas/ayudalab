@@ -15,7 +15,6 @@ class InstitucionTableSeeder extends Seeder
     {
         DB::table('institucion')->delete();
 
-
         $institucion = Institucion::create(array(
         	'rut_inst' => '81.534.189-5',
         	'nombre' => 'Comedor San Antonio',
@@ -26,5 +25,6 @@ class InstitucionTableSeeder extends Seeder
         	"vision" => "alskdmalskdmlaskdlasd"
        	));
         $this->command->info('Institucion creada.');
+
     }
 }

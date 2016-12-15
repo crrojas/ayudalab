@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 
 <head>
@@ -260,5 +261,4 @@
     <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 
 </body>
-
 </html>

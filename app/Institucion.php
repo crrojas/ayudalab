@@ -15,8 +15,8 @@ class Institucion extends Model
 		'telefono',
 		'mail'];
 
-
     public function aviso() {
     	return $this->hasMany('aviso');
+
     }
 }
