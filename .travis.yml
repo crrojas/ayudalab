@@ -1,0 +1,28 @@
+language: php
+
+php:
+  - 5.6
+
+sudo: false
+
+branches:
+  except:
+    - gh-pages
+
+env:
+  global:
+    - GH_REPO_NAME: EscBasket
+    - GH_REPO_REF: github.com/tvargasvicencio/ayudalab.git
+
+before_script:
+  - cp .env.travis .env
+  - mysql -e 'create database socialbook_test;'
+  - composer clear-cache
+  - composer self-update
+  - composer global require 'phpmetrics/phpmetrics'
+  - composer install --no-interaction
+  - php artisan key:generate
+  - php artisan migrate --database=socialbook_test --seed
+
+script:
+  - vendor/bin/phpunit
