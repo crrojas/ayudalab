@@ -15,7 +15,8 @@ class AvisoTableSeeder extends Seeder
     {
         DB::table('aviso')->delete();
 
-        factory(Aviso::class)->times(3)->create();
+        factory(Aviso::class, 'inst1')->times(3)->create();
+        factory(Aviso::class, 'inst2')->times(3)->create();
 
         $this->command->info('Avisos creados.');
     }

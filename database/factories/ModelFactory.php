@@ -22,7 +22,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(App\Aviso::class, function (Faker\Generator $faker){
+$factory->defineAs(App\Aviso::class, 'inst1', function (Faker\Generator $faker){
 	$institucion = Institucion::where('rut_inst','=','81.534.189-5')->first();
 	return[
  		'titulo' => $faker->sentence(5),
@@ -32,7 +32,7 @@ $factory->define(App\Aviso::class, function (Faker\Generator $faker){
 	];
 });
 
-$factory->define(App\Aviso::class, function (Faker\Generator $faker){
+$factory->defineAs(App\Aviso::class, 'inst2', function (Faker\Generator $faker){
 	$institucion = Institucion::where('rut_inst','=','92.164.732-1')->first();
 	return[
  		'titulo' => $faker->sentence(5),
