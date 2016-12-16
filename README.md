@@ -1,4 +1,7 @@
 # SocialBook
+
+[![Build Status](https://travis-ci.org/tvargasvicencio/ayudalab.svg?branch=master)](https://travis-ci.org/tvargasvicencio/ayudalab)
+
 Aplicación Web para la divulgación de ayuda social.
 
 El objetivo principal del servicio es conectar a instituciones de beneficio social y sin fines de lucro con personas que desean ayudar pero no saben como.
