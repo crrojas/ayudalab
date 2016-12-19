@@ -83,6 +83,9 @@
                         <p>{{ $institucion->mision }}</p>
 
                         <h5>Visión</h5>
+                        <p>{{$institucion->vision }}</p>
+
+                        <h6>Visión</h6>
                         <p>{{$institucion->vision }}</p>                        
                     </div>
                 </div>
