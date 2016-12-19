@@ -79,14 +79,19 @@
                 <div class="thumbnail">
                     <img class="img-responsive" src="http://placehold.it/800x300" alt="">
                     <div class="caption-full">
-                        <h4>Mísión</h4>
+                        <h3>Mísión</h3>
                         <p>{{ $institucion->mision }}</p>
 
-                        <h5>Visión</h5>
+                        <h3>Visión</h3>
                         <p>{{$institucion->vision }}</p>
 
-                        <h6>Visión</h6>
-                        <p>{{$institucion->vision }}</p>                        
+                        <h3>Visión</h3>
+                        <p>{{$institucion->vision }}</p>
+
+                        <h3>Contacto</h3>
+                        <p>Teléfono: +569 {{institucion->telefono}}</p>
+                        <p>Dirección: {{institucion->direccion}}</p>
+                        <p>Email: {{institucion->mail}}</p>                         
                     </div>
                 </div>
 
