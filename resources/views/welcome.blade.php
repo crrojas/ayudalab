@@ -69,7 +69,7 @@
                 <p class="lead">Instituciones</p>
                 <div class="list-group">
                     @foreach ($instituciones as $key => $institucion)
-                        <a href="#" class="list-group-item">{{ $institucion->nombre }}</a>
+                        <a href="institucion/{{$institucion->nom_institucion}}" class="list-group-item">{{ $institucion->nombre }}</a>
                                 
                     @endforeach
 
@@ -116,7 +116,7 @@
                         <div class="thumbnail">
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
-                                <h4><a href="#">{{ $aviso->titulo }}</a>
+                                <h4><a href="institucion/{{$aviso->nom_institucion}}/aviso/{{$aviso->id}}">{{ $aviso->titulo }}</a>
                                 </h4>
                                 <p>{{ $aviso->descripcion }}</p>
                             </div>
