@@ -13,4 +13,6 @@
 
 
 Route::get('/', 'HomepageController@index');
+Route::get('/institucion/{institucion}', 'InstitucionController@index');
+
 
