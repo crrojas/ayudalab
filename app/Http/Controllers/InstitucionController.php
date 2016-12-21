@@ -15,7 +15,7 @@ class InstitucionController extends Controller
     {
     	$institucion_conEspacios  = str_replace("_"," ",$institucion);
     	$institucion = Institucion::where('nombre',$institucion_conEspacios)->first();
-    	$instituciones = Institucion::all();
+    	$instituciones = Controller::listado_instituciones();
     	return view('institucion',compact('institucion', 'instituciones'));  
     }
 }
