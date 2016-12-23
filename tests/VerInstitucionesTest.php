@@ -11,11 +11,6 @@ class VerInstitucionesTest extends TestCase
      *
      * @return void
      */
-    public function testLaravel()
-    {
-        $this->visit('/')
-             ->see('Laravel');
-    }
     public function testSanAntonio()
     {
         $this->visit('/')

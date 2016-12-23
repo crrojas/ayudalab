@@ -19,4 +19,8 @@ class Institucion extends Model
     	return $this->hasMany('aviso');
 
     }
+    public function user() {
+    	return $this->hasMany('user');
+
+    }
 }
