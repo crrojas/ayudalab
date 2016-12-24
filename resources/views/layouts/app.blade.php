@@ -83,17 +83,6 @@
 
         <div class="row">
 
-            <div class="col-md-3">
-                <p class="lead">Instituciones</p>
-                <div class="list-group">
-                    @foreach ($instituciones as $key => $institucion)
-                        <a href="/institucion/{{$institucion->nom_institucion}}" class="list-group-item">{{ $institucion->nombre }}</a>
-                                
-                    @endforeach
-
-                </div>
-            </div>
-
             <!-- CONTENIDO UNICO -->
             @yield('content')
 

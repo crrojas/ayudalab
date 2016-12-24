@@ -23,7 +23,7 @@ class HomepageController extends Controller
     			}
     		}
     	}
-    	return view('welcome',compact('instituciones', 'avisos'));
+    	return view('homepage',compact('instituciones', 'avisos'));
 
     }
 }

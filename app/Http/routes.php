@@ -16,3 +16,7 @@ Route::get('/', 'HomepageController@index');
 Route::get('/institucion/{institucion?}', 'InstitucionController@index');
 
 
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');

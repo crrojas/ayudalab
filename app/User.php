@@ -24,14 +24,12 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-}
-
     public function aviso()
     {
         return $this->hasMany('aviso');
     }
     public function institucion()
     {
-        return $this->hasOne('institucion');
+        return $this->belongsTo('institucion');
     }
 }
