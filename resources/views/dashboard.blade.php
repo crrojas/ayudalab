@@ -97,6 +97,20 @@
         <div id="page-wrapper">
 
             <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            {{$user_inst->nombre}} <small>Panel de Control</small>
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li class="active">
+                                @yield('lugar')
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
 
                 @yield('content')
 
