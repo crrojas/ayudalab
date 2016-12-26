@@ -31,7 +31,14 @@ class HomeController extends Controller
             // El usuario está autenticado
             $user = Auth::user();
             $institucion = Institucion::where('rut_inst',$user->rut_inst)->first();
-            return view('dashboard',compact('user', 'institucion'));
+            $instituciones = Controller::listado_instituciones();
+            foreach ($instituciones as $key => $institucion) {
+                if ($user->rut_inst == $institucion->rut_inst) {
+                    $user_inst = $institucion;
+                    $user_inst['nom_institucion'] = $institucion->nom_institucion;
+                }
+            }
+            return view('dashboard',compact('user', 'user_inst'));
         }
     }
 }
