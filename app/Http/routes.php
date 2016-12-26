@@ -19,4 +19,7 @@ Route::get('/institucion/{institucion?}', 'InstitucionController@index');
 
 Route::auth();
 
-Route::get('/dashboard', 'HomeController@index');
+Route::get('/dashboard/informacionInstitucional', 'HomeController@informacionInstitucional');
+Route::get('/dashboard/estadisticas', 'HomeController@estadisticas');
+Route::get('/dashboard/nuevoEvento', 'HomeController@nuevoEvento');
+Route::get('/dashboard/listaEventos', 'HomeController@listaEventos');

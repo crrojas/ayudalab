@@ -67,7 +67,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> {{ Auth::user()->name }} <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="/dashboard"><i class="fa fa-fw fa-gear"></i> Panel de Control</a>
+                                    <a href="/dashboard/informacionInstitucional"><i class="fa fa-fw fa-gear"></i> Panel de Control</a>
                                 </li>
                                 <li class="divider"></li>
                                 <li>

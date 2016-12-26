@@ -38,7 +38,32 @@ class HomeController extends Controller
                     $user_inst['nom_institucion'] = $institucion->nom_institucion;
                 }
             }
-            return view('dashboard',compact('user', 'user_inst'));
+            return [$user, $user_inst];
         }
+    }
+
+    public function informacionInstitucional(){
+        $elements = HomeController::index();
+        $user = $elements[0];
+        $user_inst = $elements[1];
+        return view('informacionInstitucional',compact('user', 'user_inst'));
+    }
+    public function nuevoEvento(){
+        $elements = HomeController::index();
+        $user = $elements[0];
+        $user_inst = $elements[1];
+        return view('nuevoEvento',compact('user', 'user_inst'));
+    }
+    public function listaEventos(){
+        $elements = HomeController::index();
+        $user = $elements[0];
+        $user_inst = $elements[1];
+        return view('listaEventos',compact('user', 'user_inst'));
+    }
+    public function estadisticas(){
+        $elements = HomeController::index();
+        $user = $elements[0];
+        $user_inst = $elements[1];
+        return view('estadisticas',compact('user', 'user_inst'));
     }
 }
