@@ -19,7 +19,17 @@ Route::get('/institucion/{institucion?}', 'InstitucionController@index');
 
 Route::auth();
 
-Route::get('/dashboard/informacionInstitucional', 'HomeController@informacionInstitucional');
-Route::get('/dashboard/estadisticas', 'HomeController@estadisticas');
-Route::get('/dashboard/nuevoEvento', 'HomeController@nuevoEvento');
-Route::get('/dashboard/listaEventos', 'HomeController@listaEventos');
+/*Route::get('protected', ['middleware' => ['auth', 'superuser'],
+	function(){
+		return view('institucion');
+	}]);*/
+
+
+
+
+Route::group(array('prefix' => 'superuser', 'namespace' => 'Superuser', 'middleware' => ['superuser','auth']), function(){
+	Route::get('/dashboard/informacionInstitucional', 'HomeController@informacionInstitucional');
+	Route::get('/dashboard/estadisticas', 'HomeController@estadisticas');
+	Route::get('/dashboard/nuevoEvento', 'HomeController@nuevoEvento');
+	Route::get('/dashboard/listaEventos', 'HomeController@listaEventos');
+});

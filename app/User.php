@@ -12,7 +12,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'rut_inst'
+        'name', 'email', 'password', 'rut_inst', 'superuser'
     ];
 
     /**
@@ -23,6 +23,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    protected $casts = ['superuser' => 'boolean'];
 
     public function aviso()
     {
@@ -31,5 +33,8 @@ class User extends Authenticatable
     public function institucion()
     {
         return $this->belongsTo('institucion');
+    }
+    public function superuser(){
+        return $this->superuser;
     }
 }
