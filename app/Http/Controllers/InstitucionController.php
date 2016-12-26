@@ -11,6 +11,10 @@ use App\Aviso;
 class InstitucionController extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index($institucion)
     {
     	$institucion_conEspacios  = str_replace("_"," ",$institucion);

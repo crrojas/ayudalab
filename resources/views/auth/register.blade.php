@@ -38,6 +38,20 @@
                             </div>
                         </div>
 
+                        <div class="form-group{{ $errors->has('rut_inst') ? ' has-error' : '' }}">
+                            <label for="rut_inst" class="col-md-4 control-label">Rut Institución</label>
+
+                            <div class="col-md-6">
+                                <input id="rut_inst" type="text" class="form-control" name="rut_inst" value="{{ old('rut_inst') }}">
+
+                                @if ($errors->has('rut_inst'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('rut_inst') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>
 
