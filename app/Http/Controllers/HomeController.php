@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use Auth;
+use App\Institucion;
 
 class HomeController extends Controller
 {
@@ -24,6 +26,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        if (Auth::check())
+        {
+            // El usuario está autenticado
+            $user = Auth::user();
+            $institucion = Institucion::where('rut_inst',$user->rut_inst)->first();
+            return view('dashboard',compact('user', 'institucion'));
+        }
     }
 }
