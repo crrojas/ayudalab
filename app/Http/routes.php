@@ -20,6 +20,8 @@ Route::get('/institucion/{institucion?}', 'InstitucionController@index');
 Route::auth();
 
 Route::get('/dashboard/informacionInstitucional', 'HomeController@informacionInstitucional');
+Route::post('/dashboard/informacionInstitucional', 'HomeController@editarInformacionInstitucional');
 Route::get('/dashboard/estadisticas', 'HomeController@estadisticas');
 Route::get('/dashboard/nuevoEvento', 'HomeController@nuevoEvento');
+Route::post('/dashboard/nuevoEvento', 'HomeController@guardarNuevoEvento');
 Route::get('/dashboard/listaEventos', 'HomeController@listaEventos');

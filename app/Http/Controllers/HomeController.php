@@ -6,6 +6,8 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use Auth;
 use App\Institucion;
+use Validator;
+use Response;
 
 class HomeController extends Controller
 {
@@ -47,6 +49,40 @@ class HomeController extends Controller
         $user = $elements[0];
         $user_inst = $elements[1];
         return view('informacionInstitucional',compact('user', 'user_inst'));
+    }
+    public function editarInformacionInstitucional(Request $request){
+        /*$this->validate($request, [
+            'nombre' => 'required',
+            'direccion' => 'required',
+            'mision' => 'required',
+            'vision' => 'required',
+            'telefono' => 'required',
+            'mail' => 'required',
+        ]);*/
+        $elements = HomeController::index();
+        $user = $elements[0];
+        $user_inst = $elements[1];
+
+        $v = Validator::make($request->all(),[
+            'nombre' => 'required',
+            'direccion' => 'required',
+            'mision' => 'required',
+            'vision' => 'required',
+            'telefono' => 'required',
+            'mail' => 'required',
+        ]);
+
+        if ($v->fails())
+        {
+            return Response::json(array(
+                'success' => false,
+                'errors' => $v->getMessageBag()->toArray()
+
+            ), 400);
+        }
+        else{
+            return Response::json(array('success' => true), 200);
+        }
     }
     public function nuevoEvento(){
         $elements = HomeController::index();

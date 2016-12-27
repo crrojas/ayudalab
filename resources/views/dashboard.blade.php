@@ -23,6 +23,12 @@
     <!-- Custom Fonts -->
     <link href="{{asset('assets/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
 
+    <!-- jQuery -->
+    <script src="{{asset('assets/js/jquery.js')}}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -122,12 +128,6 @@
 
     </div>
     <!-- /#wrapper -->
-
-    <!-- jQuery -->
-    <script src="{{asset('assets/js/jquery.js')}}"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 
     <script type="text/javascript">
         var activo = (window.location.href).substring(32);
