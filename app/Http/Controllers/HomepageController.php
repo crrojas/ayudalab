@@ -15,7 +15,7 @@ class HomepageController extends Controller
     public function index(){
     	//$institucion = Institucion::where('nombre','Comedor San Antonio')->first();
     	$instituciones = Controller::listado_instituciones();
-    	$avisos = Aviso::all();
+    	$avisos = Aviso::paginate(6);
     	foreach ($avisos as $key => $aviso) {
     		foreach ($instituciones as $key => $institucion) {
     			if ($aviso->rut_inst == $institucion->rut_inst) {
