@@ -6,8 +6,11 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use Auth;
 use App\Institucion;
+use App\Aviso;
+use App\User;
 use Validator;
 use Response;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -117,7 +120,17 @@ class HomeController extends Controller
         $elements = HomeController::index();
         $user = $elements[0];
         $user_inst = $elements[1];
-        return view('listaAviso',compact('user', 'user_inst'));
+        $instituciones = Controller::listado_instituciones();
+
+        $avisos = Aviso::where('rut_inst',$user->rut_inst)->paginate(6);
+        foreach ($avisos as $key => $aviso) {
+            foreach ($instituciones as $key => $institucion) {
+                if ($aviso->rut_inst == $institucion->rut_inst) {
+                    $aviso['nom_institucion'] = $institucion->nom_institucion;
+                }
+            }
+        }
+        return view('listaAvisos',compact('user', 'user_inst', 'avisos'));
     }
 
 
