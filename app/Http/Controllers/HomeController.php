@@ -94,12 +94,8 @@ class HomeController extends Controller
         $user_inst = $elements[1];
 
         $v = Validator::make($request->all(),[
-            'nombre' => 'required',
-            'direccion' => 'required',
-            'mision' => 'required',
-            'vision' => 'required',
-            'telefono' => 'required',
-            'mail' => 'required',
+            'titulo' => 'required',
+            'descripcion' => 'required',
         ]);
 
         if ($v->fails())
