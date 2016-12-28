@@ -82,13 +82,13 @@
                         <a href="informacionInstitucional"><i class="fa fa-fw fa-dashboard"></i> Información Institucional</a>
                     </li>
                     <li>
-                        <a id="eventos" href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-calendar"></i> Eventos <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a id="eventos" href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-calendar"></i> Avisos <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li id="nuevoEvento">
-                                <a href="nuevoEvento">Nuevo Evento</a>
+                                <a href="nuevoAviso">Nuevo Aviso</a>
                             </li>
                             <li id="listaEventos">
-                                <a href="listaEventos">Lista de Eventos</a>
+                                <a href="listaAvisos">Lista de Avisos</a>
                             </li>
                         </ul>
                     </li>
@@ -130,7 +130,7 @@
     <!-- /#wrapper -->
 
     <script type="text/javascript">
-        var activo = (window.location.href).substring(32);
+        var activo = (window.location.pathname).substring(11);
         if (activo=="nuevoEvento" || activo=="listaEventos"){
             $("#eventos").removeClass();
             $("#eventos").attr("aria-expanded","true");
@@ -142,6 +142,40 @@
         }
         $("#"+activo).addClass("active");
     </script>
+
+<!-- Enviar Formularios por AJAX -->
+    <style type="text/css">
+    .help-block{display: none;}
+    </style>
+
+    <script type="text/javascript">
+    function enviarFormulario(operacion){
+        var url = window.location.pathname;
+        $.ajax({
+            url: url,
+            type: "POST",
+            dataType: 'json',
+            data: $("#"+operacion).serialize(),
+            success: function(response){
+                $(".form-group").removeClass("has-error");
+                $(".help-block").css("display","none");
+                $("strong").remove();
+            },
+            error: function(response){
+                $(".form-group").removeClass("has-error");
+                $(".help-block").css("display","none");
+                $("strong").remove();
+                var data = response.responseJSON;
+                for (var i in data['errors']) {
+                    $("#"+i+"Group").addClass("has-error");
+                    $("#"+i+"Helpblock").append("<strong>"+data['errors'][i][0]+"</strong>")
+                    $("#"+i+"Helpblock").css("display","inline");
+                }
+            },
+        });     
+    }
+    </script>
+<!-- FIN Enviar Formularios por AJAX -->
 
     <!-- Morris Charts JavaScript -->
     <script src="{{asset('assets/js/plugins/morris/raphael.min.js')}}"></script>

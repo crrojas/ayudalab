@@ -1,11 +1,11 @@
 @extends('dashboard')
-@section('lugar') <i class="fa fa-fw fa-dashboard"></i> Información Institucional @endsection
+@section('lugar') <i class="fa fa-fw fa-calendar"></i> Eventos -> Nuevo Evento @endsection
 @section('content')
 
 <div class="panel panel-default">
     <div class="panel-heading">Información Institucional</div>
     <div class="panel-body">
-        <form class="form-horizontal" role="form" method="POST" id="editarInformacionInstitucional">
+        <form class="form-horizontal" role="form" method="POST" id="nuevoAviso">
             {{ csrf_field() }}
 
             <div id="nombreGroup" class="form-group">
@@ -70,7 +70,7 @@
 
             <div class="form-group">
                 <div class="col-md-6 col-md-offset-4">
-                    <input type="button" onclick="enviarFormulario('editarInformacionInstitucional')" class="btn btn-primary" value=" Guardar">
+                    <input type="button" onclick="enviarFormulario('nuevoAviso')" class="btn btn-primary" value=" Guardar">
                     </input>
                 </div>
             </div>

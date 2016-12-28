@@ -21,7 +21,10 @@ Route::auth();
 
 Route::get('/dashboard/informacionInstitucional', 'HomeController@informacionInstitucional');
 Route::post('/dashboard/informacionInstitucional', 'HomeController@editarInformacionInstitucional');
+
 Route::get('/dashboard/estadisticas', 'HomeController@estadisticas');
-Route::get('/dashboard/nuevoEvento', 'HomeController@nuevoEvento');
-Route::post('/dashboard/nuevoEvento', 'HomeController@guardarNuevoEvento');
-Route::get('/dashboard/listaEventos', 'HomeController@listaEventos');
+
+Route::get('/dashboard/nuevoAviso', 'HomeController@nuevoAviso');
+Route::post('/dashboard/nuevoAviso', 'HomeController@guardarNuevoAviso');
+
+Route::get('/dashboard/listaAvisos', 'HomeController@listaAvisos');

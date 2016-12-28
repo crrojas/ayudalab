@@ -44,21 +44,15 @@ class HomeController extends Controller
         }
     }
 
+//GET
     public function informacionInstitucional(){
         $elements = HomeController::index();
         $user = $elements[0];
         $user_inst = $elements[1];
         return view('informacionInstitucional',compact('user', 'user_inst'));
     }
+//POST
     public function editarInformacionInstitucional(Request $request){
-        /*$this->validate($request, [
-            'nombre' => 'required',
-            'direccion' => 'required',
-            'mision' => 'required',
-            'vision' => 'required',
-            'telefono' => 'required',
-            'mail' => 'required',
-        ]);*/
         $elements = HomeController::index();
         $user = $elements[0];
         $user_inst = $elements[1];
@@ -84,18 +78,54 @@ class HomeController extends Controller
             return Response::json(array('success' => true), 200);
         }
     }
-    public function nuevoEvento(){
+
+
+//GET
+    public function nuevoAviso(){
         $elements = HomeController::index();
         $user = $elements[0];
         $user_inst = $elements[1];
-        return view('nuevoEvento',compact('user', 'user_inst'));
+        return view('nuevoAviso',compact('user', 'user_inst'));
     }
-    public function listaEventos(){
+//POST
+    public function guardarNuevoAviso(Request $request){
         $elements = HomeController::index();
         $user = $elements[0];
         $user_inst = $elements[1];
-        return view('listaEventos',compact('user', 'user_inst'));
+
+        $v = Validator::make($request->all(),[
+            'nombre' => 'required',
+            'direccion' => 'required',
+            'mision' => 'required',
+            'vision' => 'required',
+            'telefono' => 'required',
+            'mail' => 'required',
+        ]);
+
+        if ($v->fails())
+        {
+            return Response::json(array(
+                'success' => false,
+                'errors' => $v->getMessageBag()->toArray()
+
+            ), 400);
+        }
+        else{
+            return Response::json(array('success' => true), 200);
+        }
     }
+
+
+//GET
+    public function listaAvisos(){
+        $elements = HomeController::index();
+        $user = $elements[0];
+        $user_inst = $elements[1];
+        return view('listaAviso',compact('user', 'user_inst'));
+    }
+
+
+
     public function estadisticas(){
         $elements = HomeController::index();
         $user = $elements[0];
