@@ -144,6 +144,17 @@ class HomeController extends Controller
     }
 
 
+    //GET
+    public function editarAviso(){
+        $elements = HomeController::index();
+        $user = $elements[0];
+        $user_inst = $elements[1];
+        return view('nuevoAviso',compact('user', 'user_inst'));
+    }
+
+
+
+
 
     public function estadisticas(){
         $elements = HomeController::index();
@@ -151,4 +162,5 @@ class HomeController extends Controller
         $user_inst = $elements[1];
         return view('estadisticas',compact('user', 'user_inst'));
     }
+
 }

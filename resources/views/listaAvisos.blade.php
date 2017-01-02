@@ -12,11 +12,11 @@
             <div class="thumbnail">
                 <img src="http://placehold.it/320x150" alt="">
                 <div class="caption">
-                    <h4><a href="/institucion/{{$aviso->nom_institucion}}/aviso/{{$aviso->id}}">{{ $aviso->titulo }}</a>
+                    <h4><a href="/dashboard/institucion/{{$aviso->nom_institucion}}/aviso/{{$aviso->id}}">{{ $aviso->titulo }}</a>
                     </h4>
                     <p>{{ $aviso->descripcion }}</p>
                 </div>
-                <button type="button" onclick="editarAviso('{{$aviso->id}}','{{$aviso->nom_institucion}}')" class="btn btn-primary btn-block">Editar</button>
+                <a type="button" href="/dashboard/institucion/{{$aviso->nom_institucion}}/aviso/{{$aviso->id}}" class="btn btn-primary btn-block">Editar</a>
                 <button type="button" onclick="confirmar('{{$aviso->id}}','{{$aviso->nom_institucion}}')" class="btn btn-danger btn-block">Eliminar</button>
             </div>
         </div>      
@@ -58,8 +58,8 @@
         $("#textoPopup").empty();
         $("#textoPopup").append("<p>¿Está seguro que desea eliminar el Aviso?</p>");
         $("#confirmarPopup").empty();
-        $("#confirmarPopup").append('<button type="button" class="btn btn-default" onclick="eliminarAviso('+input+')">Aceptar</button>');
-        $("#confirmarPopup").append('<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>');
+        $("#confirmarPopup").append('<button type="button" class="btn btn-danger" onclick="eliminarAviso('+input+')">Eliminar</button>');
+        $("#confirmarPopup").append('<button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>');
 
     }
 
