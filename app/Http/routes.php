@@ -28,3 +28,4 @@ Route::get('/dashboard/nuevoAviso', 'HomeController@nuevoAviso');
 Route::post('/dashboard/nuevoAviso', 'HomeController@guardarNuevoAviso');
 
 Route::get('/dashboard/listaAvisos', 'HomeController@listaAvisos');
+Route::post('/dashboard/listaAvisos/eliminarAviso', 'HomeController@eliminarAviso');

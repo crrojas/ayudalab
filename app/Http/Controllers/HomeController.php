@@ -133,6 +133,16 @@ class HomeController extends Controller
         return view('listaAvisos',compact('user', 'user_inst', 'avisos'));
     }
 
+//POST
+    public function eliminarAviso(Request $request){
+        echo "eliminando aviso";
+        $elements = HomeController::index();
+        $user = $elements[0];
+        $user_inst = $elements[1];
+        
+        return Response::json(array('success' => true), 200);
+    }
+
 
 
     public function estadisticas(){
