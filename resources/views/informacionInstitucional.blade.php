@@ -32,7 +32,7 @@
                 <label for="mision" class="col-md-4 control-label">Misión</label>
 
                 <div class="col-md-6">
-                    <input id="mision" type="text" class="form-control" name="mision" value="{{ $user_inst->mision }}">
+                    <textarea id="mision" class="form-control" rows="5" name="mision">{{ $user_inst->mision }}</textarea>
 
                         <span id="misionHelpblock" class="help-block"></span>
                 </div>
@@ -42,7 +42,7 @@
                 <label for="vision" class="col-md-4 control-label">Visión</label>
 
                 <div class="col-md-6">
-                    <input id="vision" type="text" class="form-control" name="vision" value="{{ $user_inst->vision }}">
+                    <textarea id="vision" class="form-control" rows="5" name="vision">{{ $user_inst->vision }}</textarea>
 
                         <span id="visionHelpblock" class="help-block"></span>
                 </div>
