@@ -145,11 +145,41 @@ class HomeController extends Controller
 
 
     //GET
-    public function editarAviso(){
+    public function editarAviso($institucion,$aviso){
         $elements = HomeController::index();
         $user = $elements[0];
         $user_inst = $elements[1];
-        return view('nuevoAviso',compact('user', 'user_inst'));
+        $aviso = Aviso::where('id',$aviso)->where('rut_inst',$user_inst->rut_inst)->first();
+        if ($aviso) {
+            return view('editarAviso',compact('user', 'user_inst','aviso'));
+        }
+        else{
+            return view('errors/503');
+        }
+        
+    }
+    //POST
+    public function guardarEditarAviso(Request $request){
+        $elements = HomeController::index();
+        $user = $elements[0];
+        $user_inst = $elements[1];
+
+        $v = Validator::make($request->all(),[
+            'titulo' => 'required',
+            'descripcion' => 'required',
+        ]);
+
+        if ($v->fails())
+        {
+            return Response::json(array(
+                'success' => false,
+                'errors' => $v->getMessageBag()->toArray()
+
+            ), 400);
+        }
+        else{
+            return Response::json(array('success' => true), 200);
+        }
     }
 
 

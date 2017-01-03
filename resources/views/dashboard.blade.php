@@ -79,21 +79,21 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li id="informacionInstitucional">
-                        <a href="informacionInstitucional"><i class="fa fa-fw fa-dashboard"></i> Información Institucional</a>
+                        <a href="/dashboard/informacionInstitucional"><i class="fa fa-fw fa-dashboard"></i> Información Institucional</a>
                     </li>
                     <li>
                         <a id="eventos" href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-calendar"></i> Avisos <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li id="nuevoEvento">
-                                <a href="nuevoAviso">Nuevo Aviso</a>
+                                <a href="/dashboard/nuevoAviso">Nuevo Aviso</a>
                             </li>
                             <li id="listaEventos">
-                                <a href="listaAvisos">Lista de Avisos</a>
+                                <a href="/dashboard/listaAvisos">Lista de Avisos</a>
                             </li>
                         </ul>
                     </li>
                     <li id="estadisticas">
-                        <a href="estadisticas"><i class="fa fa-fw fa-bar-chart-o"></i> Estadísticas de Eventos</a>
+                        <a href="/dashboard/estadisticas"><i class="fa fa-fw fa-bar-chart-o"></i> Estadísticas de Eventos</a>
                     </li>
                 </ul>
             </div>
