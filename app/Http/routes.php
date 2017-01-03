@@ -14,6 +14,7 @@
 
 Route::get('/', 'HomepageController@index');
 Route::get('/institucion/{institucion?}', 'InstitucionController@index');
+Route::get('/institucion/{institucion?}/aviso/{aviso?}', 'InstitucionController@verAviso');
 
 
 

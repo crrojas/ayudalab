@@ -12,7 +12,7 @@
             <div class="thumbnail">
                 <img src="http://placehold.it/320x150" alt="">
                 <div class="caption">
-                    <h4><a href="/dashboard/institucion/{{$aviso->nom_institucion}}/aviso/{{$aviso->id}}">{{ $aviso->titulo }}</a>
+                    <h4><a href="/institucion/{{$aviso->nom_institucion}}/aviso/{{$aviso->id}}">{{ $aviso->titulo }}</a>
                     </h4>
                     <p>{{ $aviso->descripcion }}</p>
                 </div>

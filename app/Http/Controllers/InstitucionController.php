@@ -10,16 +10,20 @@ use App\Aviso;
 
 class InstitucionController extends Controller
 {
-    //
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    
     public function index($institucion)
     {
     	$institucion_conEspacios  = str_replace("_"," ",$institucion);
     	$institucion = Institucion::where('nombre',$institucion_conEspacios)->first();
     	$instituciones = Controller::listado_instituciones();
     	return view('institucion',compact('institucion', 'instituciones'));  
+    }
+
+    //GET
+    public function verAviso($institucion,$aviso){
+        $institucion_conEspacios  = str_replace("_"," ",$institucion);
+        $institucion = Institucion::where('nombre',$institucion_conEspacios)->first();
+        $instituciones = Controller::listado_instituciones();
+        return view('verAviso',compact('institucion', 'instituciones'));  
     }
 }
