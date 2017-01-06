@@ -29,6 +29,12 @@
 
 <script type="text/javascript">
 
+    /**
+     * Muestra un popup para confirmar si se quiere eliminar el aviso o no
+     *
+     * @param      {string}  id               ID del aviso
+     * @param      {string}  nom_institucion  El nombre de la institución dueña del aviso
+     */
     function confirmar(id,nom_institucion){
         var input = "'"+id.toString()+","+nom_institucion.toString()+"'";
         $('#popupConfirmacion').modal('show');
@@ -40,6 +46,14 @@
 
     }
 
+    /**
+     * Envía vía AJAX la información del aviso que se desea eliminar
+     * Si es exitoso, muestra la respuesta en un popup y recarga la página
+     * Sino, muestra la respuesta en un popup
+     *
+     * @param      {string}  id               ID del aviso
+     * @param      {string}  nom_institucion  El nombre de la institución dueña del aviso
+     */
     function eliminarAviso(id,nom_institucion){
         var nom = nom_institucion;
         data = {"id" : id, "nom_institucion" : nom};

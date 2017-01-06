@@ -12,6 +12,12 @@ use App\Http\Controllers\Controller;
 
 class HomepageController extends Controller
 {
+    /**
+     * Recibe petición GET a '/'
+     * Retorna la paǵina principal de Socialbook
+     *
+     * @return     <type>  ( description_of_the_return_value )
+     */
     public function index(){
     	//$institucion = Institucion::where('nombre','Comedor San Antonio')->first();
     	$instituciones = Controller::listado_instituciones();

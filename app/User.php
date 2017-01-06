@@ -24,10 +24,22 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+
+    /**
+     * Indica que User puede tener muchos aviso
+     *
+     * @return     <type>  ( description_of_the_return_value )
+     */
     public function aviso()
     {
         return $this->hasMany('aviso');
     }
+
+    /**
+     * Indica que User pertenece a una institucion
+     *
+     * @return     <type>  ( description_of_the_return_value )
+     */
     public function institucion()
     {
         return $this->belongsTo('institucion');

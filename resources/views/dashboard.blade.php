@@ -151,6 +151,9 @@
 
 
     <script type="text/javascript">
+        /**
+         * Marca como seleccionada la pestaña correspondiente del menú lateral
+         */
         var activo = (window.location.pathname).substring(11);
         if (activo=="nuevoEvento" || activo=="listaEventos"){
             $("#eventos").removeClass();
@@ -171,6 +174,15 @@
 
     <script type="text/javascript">
 
+    /**
+     * Recibe el 'id' de un formulario
+     * Lo eńvía por AJAX a la ruta que corresponde
+     * Si resulta bien, entrega la respuesta en un popup
+     * Si tiene errores de validación, los muestra en los campos correspondientes
+     * Si hay algún error desde el servidor, muestra la respuesta en un popup
+     *
+     * @param      {string}  operacion  La 'id' del formulario que se envía
+     */
     function enviarFormulario(operacion){
         var url = window.location.pathname;
         $.ajax({

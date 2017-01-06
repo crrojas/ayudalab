@@ -10,7 +10,14 @@ use App\Aviso;
 
 class InstitucionController extends Controller
 {
-    
+    /**
+     * Recibe petición GET a '/institucion/{institucion?}'
+     * Retorna la vista con toda la información de la institución solicitada
+     *
+     * @param      <type>  $institucion  El nombre de la institución solicitada
+     *
+     * @return     <type>  ( description_of_the_return_value )
+     */
     public function index($institucion)
     {
     	$institucion_conEspacios  = str_replace("_"," ",$institucion);
@@ -19,7 +26,18 @@ class InstitucionController extends Controller
     	return view('institucion',compact('institucion', 'instituciones'));  
     }
 
-    //GET
+
+    /**
+     * Recibe petición GET a '/institucion/{institucion?}/aviso/{aviso?}'
+     * Busca el aviso y si es que este pertenece a la institución que se pide
+     * Si está bien. retorna la vista que muestra información del aviso solicitado
+     * Sino, retorna una vista de error (por ahora)
+     *
+     * @param      <type>  $institucion  The institucion
+     * @param      <type>  $aviso        The aviso
+     *
+     * @return     <type>  ( description_of_the_return_value )
+     */
     public function verAviso($institucion,$aviso){
         $aux = $institucion;
         $institucion_conEspacios  = str_replace("_"," ",$institucion);
