@@ -129,6 +129,27 @@
     </div>
     <!-- /#wrapper -->
 
+    <!-- POPUP MODAL -->
+    <!-- Modal -->
+    <div id="popupConfirmacion" class="modal fade" role="dialog" style="show:false;">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">ATENCIÓN</h4>
+          </div>
+          <div class="modal-body" id="textoPopup">
+          </div>
+          <div class="modal-footer" id="confirmarPopup">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
     <script type="text/javascript">
         var activo = (window.location.pathname).substring(11);
         if (activo=="nuevoEvento" || activo=="listaEventos"){
@@ -149,6 +170,7 @@
     </style>
 
     <script type="text/javascript">
+
     function enviarFormulario(operacion){
         var url = window.location.pathname;
         $.ajax({
@@ -160,17 +182,29 @@
                 $(".form-group").removeClass("has-error");
                 $(".help-block").css("display","none");
                 $("strong").remove();
+
+                $('#popupConfirmacion').modal('show');
+                $("#textoPopup").empty();
+                $("#textoPopup").append("<p>"+response.msg+"</p>");
             },
             error: function(response){
                 $(".form-group").removeClass("has-error");
                 $(".help-block").css("display","none");
                 $("strong").remove();
                 var data = response.responseJSON;
-                for (var i in data['errors']) {
-                    $("#"+i+"Group").addClass("has-error");
-                    $("#"+i+"Helpblock").append("<strong>"+data['errors'][i][0]+"</strong>")
-                    $("#"+i+"Helpblock").css("display","inline");
+                if (data['errors']) {
+                    for (var i in data['errors']) {
+                        $("#"+i+"Group").addClass("has-error");
+                        $("#"+i+"Helpblock").append("<strong>"+data['errors'][i][0]+"</strong>")
+                        $("#"+i+"Helpblock").css("display","inline");
+                    }
                 }
+                else{
+                    $('#popupConfirmacion').modal('show');
+                    $("#textoPopup").empty();
+                    $("#textoPopup").append("<p>"+data['msg']+"</p>");
+                }
+                
             },
         });     
     }

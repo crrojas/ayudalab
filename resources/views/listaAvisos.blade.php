@@ -27,31 +27,8 @@
 </div>
 
 
-<!-- POPUP MODAL -->
-<!-- Modal -->
-<div id="popupConfirmacion" class="modal fade" role="dialog" style="show:false;">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Eliminar Aviso</h4>
-      </div>
-      <div class="modal-body" id="textoPopup">
-      </div>
-      <div class="modal-footer" id="confirmarPopup">
-      </div>
-    </div>
-
-  </div>
-</div>
-
 <script type="text/javascript">
-    function editarAviso(id,nom_institucion){
 
-    }
-    var confirmacion;
     function confirmar(id,nom_institucion){
         var input = "'"+id.toString()+","+nom_institucion.toString()+"'";
         $('#popupConfirmacion').modal('show');
@@ -71,14 +48,20 @@
             headers: { 'X-CSRF-TOKEN': $('input[name="_token"]').attr('value') },
             url: url+"/eliminarAviso",
             type: "POST",
-            dataType: 'json',
+            dataType: "json",
             data: data,
             success: function(response){
-                console.log(response);
+                $("#textoPopup").empty();
+                $("#confirmarPopup").empty();
+                $("#textoPopup").append("<p>"+response.msg+"</p>");
+                setTimeout(function(){
+                    location.reload();
+                }, 750);
             },
-            error: function(response){
-                console.log(response);
-            },
+            error: function(response, errorThrown){
+                $("#textoPopup").empty();
+                $("#textoPopup").append("<p>"+response.msg+"</p>");
+            }
         });
 
         

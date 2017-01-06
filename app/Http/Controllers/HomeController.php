@@ -78,7 +78,19 @@ class HomeController extends Controller
             ), 400);
         }
         else{
-            return Response::json(array('success' => true), 200);
+            try {
+                $institucion = Institucion::where('rut_inst',$user_inst->rut_inst)->first();
+                $institucion->nombre = $request->nombre;
+                $institucion->direccion = $request->direccion;
+                $institucion->mision = $request->mision;
+                $institucion->vision = $request->vision;
+                $institucion->telefono = $request->telefono;
+                $institucion->mail = $request->mail;
+                $institucion->save();
+                return Response::json(array('success' => true, 'msg' => "Institución editada correctamente"), 200); //200 = Ok
+            } catch (Exception $e) {
+                return Response::json(array('success' => false, 'msg' => "Error al editar institución"), 400); //400 = bad request
+            }
         }
     }
 
@@ -109,8 +121,21 @@ class HomeController extends Controller
 
             ), 400);
         }
-        else{
-            return Response::json(array('success' => true), 200);
+        else{ 
+            try {
+                $aviso = new Aviso;
+                $aviso->titulo = $request->input('titulo');
+                $aviso->descripcion = $request->input('descripcion');
+                $aviso->img = "imagen";
+                $aviso->rut_inst = $user_inst->rut_inst;
+                $aviso->user_id = $user->id;
+                $aviso->save();
+                return Response::json(array('success' => true, 'msg' => "Aviso creado correctamente"), 200); //200 = Ok
+                
+            } catch (Exception $e) {
+                return Response::json(array('success' => false, 'msg' => "Error al crear aviso"), 400); //400 = bad request
+            }
+            
         }
     }
 
@@ -122,7 +147,7 @@ class HomeController extends Controller
         $user_inst = $elements[1];
         $instituciones = Controller::listado_instituciones();
 
-        $avisos = Aviso::where('rut_inst',$user->rut_inst)->paginate(6);
+        $avisos = Aviso::where('rut_inst',$user->rut_inst)->orderBy('created_at', 'desc')->paginate(6);
         foreach ($avisos as $key => $aviso) {
             foreach ($instituciones as $key => $institucion) {
                 if ($aviso->rut_inst == $institucion->rut_inst) {
@@ -135,16 +160,22 @@ class HomeController extends Controller
 
 //POST
     public function eliminarAviso(Request $request){
-        echo "eliminando aviso";
         $elements = HomeController::index();
         $user = $elements[0];
         $user_inst = $elements[1];
         
-        return Response::json(array('success' => true), 200);
+        try {
+            $aviso = Aviso::where('id',$request->id)->where('rut_inst',$user_inst->rut_inst);
+            $aviso->delete();
+            return Response::json(array('success' => true, 'msg' => "Aviso eliminado correctamente"), 200); //200 = Ok
+        } catch (Exception $e) {
+            return Response::json(array('success' => false, 'msg' => "Error al eliminar aviso"), 400); //400 = bad request
+        }
+        
     }
 
 
-    //GET
+//GET
     public function editarAviso($institucion,$aviso){
         $elements = HomeController::index();
         $user = $elements[0];
@@ -158,7 +189,7 @@ class HomeController extends Controller
         }
         
     }
-    //POST
+//POST
     public function guardarEditarAviso(Request $request){
         $elements = HomeController::index();
         $user = $elements[0];
@@ -178,7 +209,15 @@ class HomeController extends Controller
             ), 400);
         }
         else{
-            return Response::json(array('success' => true), 200);
+            try {
+                $aviso = Aviso::where('id',$request->id)->where('rut_inst',$user_inst->rut_inst)->first();
+                $aviso->titulo = $request->titulo;
+                $aviso->descripcion = $request->descripcion;
+                $aviso->save();
+                return Response::json(array('success' => true, 'msg' => "Aviso editado correctamente"), 200); //200 = Ok
+            } catch (Exception $e) {
+                return Response::json(array('success' => false, 'msg' => "Error al editar aviso"), 400); //400 = bad request
+            }
         }
     }
 
