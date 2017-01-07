@@ -58,7 +58,7 @@ PROJECT_LOGO           =
 # entered, it will be relative to the location where doxygen was started. If
 # left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = /home/melombus/Documentos/ayudalab/documentation
+OUTPUT_DIRECTORY       = 
 
 # If the CREATE_SUBDIRS tag is set to YES then doxygen will create 4096 sub-
 # directories (in 2 levels) under the output directory of each output format and
@@ -781,15 +781,15 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = /home/melombus/Documentos/ayudalab \
-                         /home/melombus/Documentos/ayudalab/app \
-                         /home/melombus/Documentos/ayudalab/app/Http/Controllers \
-                         /home/melombus/Documentos/ayudalab/app/Http/Controllers/Auth \
-                         /home/melombus/Documentos/ayudalab/resources/views \
-                         /home/melombus/Documentos/ayudalab/database/factories \
-                         /home/melombus/Documentos/ayudalab/database/migrations \
-                         /home/melombus/Documentos/ayudalab/database/seeds \
-                         /home/melombus/Documentos/ayudalab/tests
+INPUT                  = $(TRAVIS_BUILD_DIR) \
+                         $(TRAVIS_BUILD_DIR)/app \
+                         $(TRAVIS_BUILD_DIR)/app/Http/Controllers \
+                         $(TRAVIS_BUILD_DIR)/app/Http/Controllers/Auth \
+                         $(TRAVIS_BUILD_DIR)/resources/views \
+                         $(TRAVIS_BUILD_DIR)/database/factories \
+                         $(TRAVIS_BUILD_DIR)/database/migrations \
+                         $(TRAVIS_BUILD_DIR)/database/seeds \
+                         $(TRAVIS_BUILD_DIR)/tests
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
