@@ -12,8 +12,8 @@ branches:
 env:
   global:
     - GH_REPO_NAME: ayudalab
-    - GH_REPO_REF: github.com/tvargasvicencio/ayudalab.git
     - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
+    - GH_REPO_REF: github.com/tvargasvicencio/ayudalab.git
 
 before_script:
   - cp .env.travis .env
