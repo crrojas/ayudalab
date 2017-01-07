@@ -1,3 +1,6 @@
+/**
+ * Docs
+ */
 @extends('dashboard')
 @section('lugar') <i class="fa fa-fw fa-calendar"></i> Avisos -> Lista de Avisos @endsection
 @section('content')
