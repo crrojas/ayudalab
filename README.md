@@ -4,6 +4,8 @@
 
 Aplicación Web para la divulgación de ayuda social.
 
+[Documentación](https://tvargasvicencio.github.io/ayudalab/html/) - [Cobertura de Tests](https://tvargasvicencio.github.io/ayudalab/report/) - [Análisis Estático](https://tvargasvicencio.github.io/ayudalab/report/PHPMetricsReport.html)
+
 El objetivo principal del servicio es conectar a instituciones de beneficio social y sin fines de lucro con personas que desean ayudar pero no saben como.
 
 Las instituciones deben ser validadas por el administrador de la plataforma.
