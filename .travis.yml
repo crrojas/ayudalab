@@ -37,6 +37,9 @@ addons:
 script:
   - vendor/bin/phpunit
 
+after_script:
+  - ls
+
 after_success:
   - php $TRAVIS_BUILD_DIR/vendor/phpmetrics/phpmetrics/bin/phpmetrics --report-html=$TRAVIS_BUILD_DIR/report/PHPMetricsReport.html ../$GH_REPO_NAME --offline
   - cd $TRAVIS_BUILD_DIR
