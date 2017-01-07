@@ -11,8 +11,9 @@ branches:
 
 env:
   global:
-    - GH_REPO_NAME: EscBasket
+    - GH_REPO_NAME: ayudalab
     - GH_REPO_REF: github.com/tvargasvicencio/ayudalab.git
+    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
 
 before_script:
   - cp .env.travis .env
@@ -24,5 +25,20 @@ before_script:
   - php artisan key:generate
   - php artisan migrate --database=socialbook_test --seed
 
+addons:
+  apt:
+    packages:
+      - doxygen
+      - doxygen-doc
+      - doxygen-latex
+      - doxygen-gui
+      - graphviz
+
 script:
   - vendor/bin/phpunit
+
+  after_success:
+  - php $TRAVIS_BUILD_DIR/vendor/phpmetrics/phpmetrics/bin/phpmetrics --report-html=$TRAVIS_BUILD_DIR/report/PHPMetricsReport.html ../$GH_REPO_NAME --offline
+  - cd $TRAVIS_BUILD_DIR
+  - chmod +x generateDocumentationAndDeploy.sh
+  - ./generateDocumentationAndDeploy.sh
