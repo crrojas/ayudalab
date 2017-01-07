@@ -1,7 +1,5 @@
 <?php
 
-namespace Database\Seeds;
-
 use App\Institucion;
 use App\Aviso;
 use Illuminate\Database\Seeder;
