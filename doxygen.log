@@ -1,0 +1,132 @@
+warning: ignoring unsupported tag `ALLOW_UNICODE_NAMES    =' at line 79, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `MARKDOWN_SUPPORT       =' at line 304, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `AUTOLINK_SUPPORT       =' at line 312, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `GROUP_NESTED_COMPOUNDS =' at line 361, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `EXTRACT_PACKAGE        =' at line 441, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `HIDE_COMPOUND_REFERENCE=' at line 532, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `SHOW_GROUPED_MEMB_INC  =' at line 545, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `WARN_AS_ERROR          =' at line 756, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `USE_MDFILE_AS_MAINPAGE =' at line 984, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `SOURCE_TOOLTIPS        =' at line 1040, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `CLANG_ASSISTED_PARSING =' at line 1081, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `CLANG_OPTIONS          =' at line 1089, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `HTML_EXTRA_STYLESHEET  =' at line 1194, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `HTML_INDEX_NUM_ENTRIES =' at line 1264, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `MATHJAX_FORMAT         =' at line 1545, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `MATHJAX_CODEFILE       =' at line 1573, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `EXTERNAL_SEARCH        =' at line 1622, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `SEARCHENGINE_URL       =' at line 1633, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `SEARCHDATA_FILE        =' at line 1641, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `EXTERNAL_SEARCH_ID     =' at line 1649, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `EXTRA_SEARCH_MAPPINGS  =' at line 1659, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `LATEX_EXTRA_STYLESHEET =' at line 1761, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `LATEX_EXTRA_FILES      =' at line 1769, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `LATEX_TIMESTAMP        =' at line 1828, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `RTF_SOURCE_CODE        =' at line 1894, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `MAN_SUBDIR             =' at line 1929, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `GENERATE_DOCBOOK       =' at line 1975, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `DOCBOOK_OUTPUT         =' at line 1983, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `DOCBOOK_PROGRAMLISTING =' at line 1992, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `EXTERNAL_PAGES         =' at line 2166, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `DIA_PATH               =' at line 2201, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `UML_LIMIT_NUM_FIELDS   =' at line 2295, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `DIAFILE_DIRS           =' at line 2415, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `PLANTUML_JAR_PATH      =' at line 2423, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+warning: ignoring unsupported tag `PLANTUML_INCLUDE_PATH  =' at line 2428, file /home/travis/build/tvargasvicencio/ayudalab/Doxyfile
+Warning: The selected output language "spanish" has not been updated
+since release 1.7.5.  As a result some sentences may appear in English.
+
+/home/travis/build/tvargasvicencio/ayudalab/database/seeds/DatabaseSeeder.php:9: warning: Compound DatabaseSeeder is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/seeds/AvisoTableSeeder.php:8: warning: Compound AvisoTableSeeder is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:8: warning: Compound App::Aviso is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/tests/VerInstitucionesTest.php:8: warning: Compound VerInstitucionesTest is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_12_23_025721_agregar_campo_rut_inst_a_user.php:7: warning: Compound AgregarCampoRutInstAUser is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:8: warning: Compound App::Institucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/tests/ExampleTest.php:8: warning: Compound ExampleTest is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/migrations/2014_10_12_000000_create_users_table.php:7: warning: Compound CreateUsersTable is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/PasswordController.php:9: warning: Compound App::Http::Controllers::Auth::PasswordController is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/tests/TestCase.php:4: warning: Compound TestCase is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Controller.php:15: warning: Compound App::Http::Controllers::Controller is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomepageController.php:14: warning: Compound App::Http::Controllers::HomepageController is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:12: warning: Compound App::Http::Controllers::Auth::AuthController is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/seeds/InstitucionTableSeeder.php:8: warning: Compound InstitucionTableSeeder is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/migrations/2014_10_12_100000_create_password_resets_table.php:7: warning: Compound CreatePasswordResetsTable is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/User.php:8: warning: Compound App::User is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:12: warning: Compound App::Http::Controllers::InstitucionController is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_12_26_184042_agregar_campo_booleano_superuser_tabla_user.php:7: warning: Compound AgregarCampoBooleanoSuperuserTablaUser is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_11_07_194019_crear_tabla_aviso.php:7: warning: Compound CrearTablaAviso is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_11_07_192547_crear_tabla_institucion.php:7: warning: Compound CrearTablaInstitucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/seeds/UserTableSeeder.php:6: warning: Compound UserTableSeeder is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:16: warning: Compound App::Http::Controllers::HomeController is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/User.php:12: warning: documented function `array' was not declared or defined.
+/home/travis/build/tvargasvicencio/ayudalab/app/User.php:21: warning: documented function `array' was not declared or defined.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:29: warning: documented function `string' was not declared or defined.
+/home/travis/build/tvargasvicencio/ayudalab/tests/TestCase.php:8: warning: documented function `string' was not declared or defined.
+/home/travis/build/tvargasvicencio/ayudalab/tests/TestCase.php:10: warning: Member $baseUrl (variable) of class TestCase is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/tests/TestCase.php:14: warning: Found unknown command `\Illuminate'
+/home/travis/build/tvargasvicencio/ayudalab/tests/TestCase.php:14: warning: Found unknown command `\Foundation'
+/home/travis/build/tvargasvicencio/ayudalab/tests/TestCase.php:14: warning: Found unknown command `\Application'
+/home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:9: warning: Member $table (variable) of class App::Aviso is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:11: warning: Member $fillable (variable) of class App::Aviso is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:15: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:25: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:9: warning: Member $table (variable) of class App::Institucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:16: warning: Member $fillable (variable) of class App::Institucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:21: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:31: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/User.php:16: warning: Member $fillable (variable) of class App::User is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/User.php:25: warning: Member $hidden (variable) of class App::User is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/User.php:30: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/User.php:40: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Controller.php:18: warning: Member listado_instituciones() (function) of class App::Http::Controllers::Controller is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:224: warning: argument 'type' of command @param is not found in the argument list of HomeController::editarAviso($institucion,$aviso)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:224: warning: argument 'type' of command @param is not found in the argument list of HomeController::editarAviso($institucion,$aviso)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:230: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:224: warning: The following parameters of App::Http::Controllers::HomeController::editarAviso($institucion,$aviso) are not documented:
+  parameter 'institucion'
+  parameter 'aviso'
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:64: warning: argument 'Illuminate' of command @param is not found in the argument list of HomeController::editarInformacionInstitucional(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:64: warning: argument 'Http' of command @param is not found in the argument list of HomeController::editarInformacionInstitucional(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:64: warning: argument 'Request' of command @param is not found in the argument list of HomeController::editarInformacionInstitucional(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:71: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:64: warning: The following parameters of App::Http::Controllers::HomeController::editarInformacionInstitucional(Request $request) are not documented:
+  parameter 'request'
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:198: warning: argument 'Illuminate' of command @param is not found in the argument list of HomeController::eliminarAviso(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:198: warning: argument 'Http' of command @param is not found in the argument list of HomeController::eliminarAviso(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:198: warning: argument 'Request' of command @param is not found in the argument list of HomeController::eliminarAviso(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:204: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:198: warning: The following parameters of App::Http::Controllers::HomeController::eliminarAviso(Request $request) are not documented:
+  parameter 'request'
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:293: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:248: warning: argument 'Illuminate' of command @param is not found in the argument list of HomeController::guardarEditarAviso(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:248: warning: argument 'Http' of command @param is not found in the argument list of HomeController::guardarEditarAviso(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:248: warning: argument 'Request' of command @param is not found in the argument list of HomeController::guardarEditarAviso(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:256: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:248: warning: The following parameters of App::Http::Controllers::HomeController::guardarEditarAviso(Request $request) are not documented:
+  parameter 'request'
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:126: warning: argument 'Illuminate' of command @param is not found in the argument list of HomeController::guardarNuevoAviso(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:126: warning: argument 'Http' of command @param is not found in the argument list of HomeController::guardarNuevoAviso(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:126: warning: argument 'Request' of command @param is not found in the argument list of HomeController::guardarNuevoAviso(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:133: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:126: warning: The following parameters of App::Http::Controllers::HomeController::guardarNuevoAviso(Request $request) are not documented:
+  parameter 'request'
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:29: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:54: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:177: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:116: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomepageController.php:18: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:13: warning: argument 'type' of command @param is not found in the argument list of InstitucionController::index($institucion)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:18: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:13: warning: The following parameters of App::Http::Controllers::InstitucionController::index($institucion) are not documented:
+  parameter 'institucion'
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:30: warning: argument 'type' of command @param is not found in the argument list of InstitucionController::verAviso($institucion,$aviso)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:30: warning: argument 'type' of command @param is not found in the argument list of InstitucionController::verAviso($institucion,$aviso)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:38: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:30: warning: The following parameters of App::Http::Controllers::InstitucionController::verAviso($institucion,$aviso) are not documented:
+  parameter 'institucion'
+  parameter 'aviso'
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:31: warning: Member $redirectTo (variable) of class App::Http::Controllers::Auth::AuthController is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:46: warning: Found unknown command `\Illuminate'
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:46: warning: Found unknown command `\Contracts'
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:46: warning: Found unknown command `\Validation'
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:46: warning: Found unknown command `\Validator'

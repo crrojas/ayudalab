@@ -1,0 +1,97 @@
+\documentclass[a4paper]{book}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{sectsty}
+\usepackage[titles]{tocloft}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=4,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\familydefault}{\sfdefault}
+\hfuzz=15pt
+\setlength{\emergencystretch}{15pt}
+\hbadness=750
+\tolerance=750
+\begin{document}
+\hypersetup{pageanchor=false,citecolor=blue}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large \-Social\-Book \\[1ex]\large 0.\-1 }\\
+\vspace*{1cm}
+{\large \-Generado por Doxygen 1.7.6.1}\\
+\vspace*{0.5cm}
+{\small Sábado, 7 de Enero de 2017 06:29:02}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true,citecolor=blue}
+\chapter{\-Indice de namespaces}
+\input{namespaces}
+\chapter{Índice de estructura de datos}
+\input{hierarchy}
+\chapter{Índice de estructura de datos}
+\input{annotated}
+\chapter{\-Documentación de namespaces}
+\input{namespace_laravel}
+\chapter{\-Documentación de las estructuras de datos}
+\input{class_agregar_campo_booleano_superuser_tabla_user}
+\input{class_agregar_campo_rut_inst_a_user}
+\input{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller}
+\input{class_app_1_1_aviso}
+\input{class_aviso_table_seeder}
+\input{class_app_1_1_http_1_1_controllers_1_1_controller}
+\input{class_crear_tabla_aviso}
+\input{class_crear_tabla_institucion}
+\input{class_create_password_resets_table}
+\input{class_create_users_table}
+\input{class_database_seeder}
+\input{class_example_test}
+\input{class_app_1_1_http_1_1_controllers_1_1_home_controller}
+\input{class_app_1_1_http_1_1_controllers_1_1_homepage_controller}
+\input{class_app_1_1_institucion}
+\input{class_app_1_1_http_1_1_controllers_1_1_institucion_controller}
+\input{class_institucion_table_seeder}
+\input{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_password_controller}
+\input{class_test_case}
+\input{class_app_1_1_user}
+\input{class_user_table_seeder}
+\input{class_ver_instituciones_test}
+\printindex
+\end{document}

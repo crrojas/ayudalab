@@ -1,0 +1,214 @@
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_home_controller}{\section{\-Referencia de la \-Clase \-Home\-Controller}
+\label{class_app_1_1_http_1_1_controllers_1_1_home_controller}\index{\-Home\-Controller@{\-Home\-Controller}}
+}
+
+
+\-Diagrama de herencias de \-Home\-Controller
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_app_1_1_http_1_1_controllers_1_1_home_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Diagrama de colaboración para \-Home\-Controller\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_app_1_1_http_1_1_controllers_1_1_home_controller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_app_1_1_http_1_1_controllers_1_1_home_controller_a095c5d389db211932136b53f25f39685}{\-\_\-\-\_\-construct} ()
+\item 
+\hyperlink{class_app_1_1_http_1_1_controllers_1_1_home_controller_a149eb92716c1084a935e04a8d95f7347}{index} ()
+\item 
+\hyperlink{class_app_1_1_http_1_1_controllers_1_1_home_controller_a2b9266e19e6e9224aaae7b4c7836ff40}{informacion\-Institucional} ()
+\item 
+\hyperlink{class_app_1_1_http_1_1_controllers_1_1_home_controller_adb42f8dc18c16f7d581c3615a03d6f75}{editar\-Informacion\-Institucional} (\-Request \$request)
+\item 
+\hyperlink{class_app_1_1_http_1_1_controllers_1_1_home_controller_ad1992463a8d72baca9db54556e0ada5a}{nuevo\-Aviso} ()
+\item 
+\hyperlink{class_app_1_1_http_1_1_controllers_1_1_home_controller_aa8267c0b6eb2bb4b99276eee892b81cd}{guardar\-Nuevo\-Aviso} (\-Request \$request)
+\item 
+\hyperlink{class_app_1_1_http_1_1_controllers_1_1_home_controller_a599f5b2f09e9ab0cba15ac2e08e2d3a4}{lista\-Avisos} ()
+\item 
+\hyperlink{class_app_1_1_http_1_1_controllers_1_1_home_controller_a75d08b7be79fbf0f19475105c86543fc}{eliminar\-Aviso} (\-Request \$request)
+\item 
+\hyperlink{class_app_1_1_http_1_1_controllers_1_1_home_controller_a38e591dabfd118030440ef4c003cc08f}{editar\-Aviso} (\$institucion, \$aviso)
+\item 
+\hyperlink{class_app_1_1_http_1_1_controllers_1_1_home_controller_a7a9cc6d3be72174f7e315185572208ac}{guardar\-Editar\-Aviso} (\-Request \$request)
+\item 
+\hyperlink{class_app_1_1_http_1_1_controllers_1_1_home_controller_a2c26c9b748066e4f390ee5172daa72b2}{estadisticas} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Documentación del constructor y destructor}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_home_controller_a095c5d389db211932136b53f25f39685}{\index{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!App::Http::Controllers::HomeController@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-construct} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_app_1_1_http_1_1_controllers_1_1_home_controller_a095c5d389db211932136b53f25f39685}
+\-Middleware para otorgar acceso solo a un usuario autenticado 
+
+\subsection{\-Documentación de las funciones miembro}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_home_controller_a38e591dabfd118030440ef4c003cc08f}{\index{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}!editar\-Aviso@{editar\-Aviso}}
+\index{editar\-Aviso@{editar\-Aviso}!App::Http::Controllers::HomeController@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}}
+\subsubsection[{editar\-Aviso}]{\setlength{\rightskip}{0pt plus 5cm}{\bf editar\-Aviso} (
+\begin{DoxyParamCaption}
+\item[{\$}]{institucion, }
+\item[{\$}]{aviso}
+\end{DoxyParamCaption}
+)}}\label{class_app_1_1_http_1_1_controllers_1_1_home_controller_a38e591dabfd118030440ef4c003cc08f}
+\-Recibe petición \-G\-E\-T a 'dashboard/institucion/\{institucion?\}/aviso/\{aviso?\}' \-Retorna la vista con el formulario para editar el aviso
+
+
+\begin{DoxyParams}{\-Parámetros}
+{\em $<$type$>$} & \$institucion \-El nombre de la institución dueña del aviso \\
+\hline
+{\em $<$type$>$} & \$aviso \-E\-L \-I\-D del aviso\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Devuelve}
+$<$type$>$ ( description\-\_\-of\-\_\-the\-\_\-return\-\_\-value ) 
+\end{DoxyReturn}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_home_controller_adb42f8dc18c16f7d581c3615a03d6f75}{\index{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}!editar\-Informacion\-Institucional@{editar\-Informacion\-Institucional}}
+\index{editar\-Informacion\-Institucional@{editar\-Informacion\-Institucional}!App::Http::Controllers::HomeController@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}}
+\subsubsection[{editar\-Informacion\-Institucional}]{\setlength{\rightskip}{0pt plus 5cm}{\bf editar\-Informacion\-Institucional} (
+\begin{DoxyParamCaption}
+\item[{\-Request \$}]{request}
+\end{DoxyParamCaption}
+)}}\label{class_app_1_1_http_1_1_controllers_1_1_home_controller_adb42f8dc18c16f7d581c3615a03d6f75}
+\-Recibe petición \-P\-O\-S\-T a '/dashboard/informacion\-Institucional' \-Recibe formulario vía \-A\-J\-A\-X y lo valida con \-Validator \-Si encuentra errores, devuelve una lista de errores para mostrarlos en la vista \-Sino, obtiene la institución y actualiza los datos
+
+
+\begin{DoxyParams}{\-Parámetros}
+{\em $\backslash$\-Illuminate$\backslash$\-Http$\backslash$\-Request} & \$request \-The request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Devuelve}
+$<$type$>$ ( description\-\_\-of\-\_\-the\-\_\-return\-\_\-value ) 
+\end{DoxyReturn}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_home_controller_a75d08b7be79fbf0f19475105c86543fc}{\index{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}!eliminar\-Aviso@{eliminar\-Aviso}}
+\index{eliminar\-Aviso@{eliminar\-Aviso}!App::Http::Controllers::HomeController@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}}
+\subsubsection[{eliminar\-Aviso}]{\setlength{\rightskip}{0pt plus 5cm}{\bf eliminar\-Aviso} (
+\begin{DoxyParamCaption}
+\item[{\-Request \$}]{request}
+\end{DoxyParamCaption}
+)}}\label{class_app_1_1_http_1_1_controllers_1_1_home_controller_a75d08b7be79fbf0f19475105c86543fc}
+\-Recibe petición \-P\-O\-S\-T a '/dashboard/lista\-Avisos/eliminar\-Aviso' \-Recibe la 'id' del aviso vía \-A\-J\-A\-X \-Verifica que el aviso corresponda a un aviso del usuario logueado y lo borra
+
+
+\begin{DoxyParams}{\-Parámetros}
+{\em $\backslash$\-Illuminate$\backslash$\-Http$\backslash$\-Request} & \$request \-The request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Devuelve}
+$<$type$>$ ( description\-\_\-of\-\_\-the\-\_\-return\-\_\-value ) 
+\end{DoxyReturn}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_home_controller_a2c26c9b748066e4f390ee5172daa72b2}{\index{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}!estadisticas@{estadisticas}}
+\index{estadisticas@{estadisticas}!App::Http::Controllers::HomeController@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}}
+\subsubsection[{estadisticas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf estadisticas} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_app_1_1_http_1_1_controllers_1_1_home_controller_a2c26c9b748066e4f390ee5172daa72b2}
+\-Recibe petición \-G\-E\-T a '/dashboard/estadisticas' \-Retorna la vista con estadísticas falsas (por ahora)
+
+\begin{DoxyReturn}{\-Devuelve}
+$<$type$>$ ( description\-\_\-of\-\_\-the\-\_\-return\-\_\-value ) 
+\end{DoxyReturn}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_home_controller_a7a9cc6d3be72174f7e315185572208ac}{\index{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}!guardar\-Editar\-Aviso@{guardar\-Editar\-Aviso}}
+\index{guardar\-Editar\-Aviso@{guardar\-Editar\-Aviso}!App::Http::Controllers::HomeController@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}}
+\subsubsection[{guardar\-Editar\-Aviso}]{\setlength{\rightskip}{0pt plus 5cm}{\bf guardar\-Editar\-Aviso} (
+\begin{DoxyParamCaption}
+\item[{\-Request \$}]{request}
+\end{DoxyParamCaption}
+)}}\label{class_app_1_1_http_1_1_controllers_1_1_home_controller_a7a9cc6d3be72174f7e315185572208ac}
+\-Recibe petición \-P\-O\-S\-T a 'dashboard/institucion/\{institucion?\}/aviso/\{aviso?\}' \-Recibe formulario vía \-A\-J\-A\-X y lo valida con \-Validator \-Si encuentra errores, devuelve una lista de errores para mostrarlos en la vista \-Sino, busca el aviso y verifica que corresponda al usuario logueado \-Guarda el aviso modificado
+
+
+\begin{DoxyParams}{\-Parámetros}
+{\em $\backslash$\-Illuminate$\backslash$\-Http$\backslash$\-Request} & \$request \-The request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Devuelve}
+$<$type$>$ ( description\-\_\-of\-\_\-the\-\_\-return\-\_\-value ) 
+\end{DoxyReturn}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_home_controller_aa8267c0b6eb2bb4b99276eee892b81cd}{\index{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}!guardar\-Nuevo\-Aviso@{guardar\-Nuevo\-Aviso}}
+\index{guardar\-Nuevo\-Aviso@{guardar\-Nuevo\-Aviso}!App::Http::Controllers::HomeController@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}}
+\subsubsection[{guardar\-Nuevo\-Aviso}]{\setlength{\rightskip}{0pt plus 5cm}{\bf guardar\-Nuevo\-Aviso} (
+\begin{DoxyParamCaption}
+\item[{\-Request \$}]{request}
+\end{DoxyParamCaption}
+)}}\label{class_app_1_1_http_1_1_controllers_1_1_home_controller_aa8267c0b6eb2bb4b99276eee892b81cd}
+\-Recibe petición \-P\-O\-S\-T a '/dashboard/nuevo\-Aviso' \-Recibe formulario vía \-A\-J\-A\-X y lo valida con \-Validator \-Si encuentra errores, devuelve una lista de errores para mostrarlos en la vista \-Sino, crea el nuevo aviso y lo guarda en \-B\-D
+
+
+\begin{DoxyParams}{\-Parámetros}
+{\em $\backslash$\-Illuminate$\backslash$\-Http$\backslash$\-Request} & \$request \-The request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Devuelve}
+$<$type$>$ ( description\-\_\-of\-\_\-the\-\_\-return\-\_\-value ) 
+\end{DoxyReturn}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_home_controller_a149eb92716c1084a935e04a8d95f7347}{\index{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}!index@{index}}
+\index{index@{index}!App::Http::Controllers::HomeController@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf index} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_app_1_1_http_1_1_controllers_1_1_home_controller_a149eb92716c1084a935e04a8d95f7347}
+\-Revisa si el usuario actual está autenticado \-Devuelve un objeto con el usuario logueado y otro de su institución correspondiente
+
+\begin{DoxyReturn}{\-Devuelve}
+$<$type$>$ ( description\-\_\-of\-\_\-the\-\_\-return\-\_\-value ) 
+\end{DoxyReturn}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_home_controller_a2b9266e19e6e9224aaae7b4c7836ff40}{\index{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}!informacion\-Institucional@{informacion\-Institucional}}
+\index{informacion\-Institucional@{informacion\-Institucional}!App::Http::Controllers::HomeController@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}}
+\subsubsection[{informacion\-Institucional}]{\setlength{\rightskip}{0pt plus 5cm}{\bf informacion\-Institucional} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_app_1_1_http_1_1_controllers_1_1_home_controller_a2b9266e19e6e9224aaae7b4c7836ff40}
+\-Recibe petición \-G\-E\-T a '/dashboard/informacion\-Institucional' \-Retorna la vista para editar la información institucional en el dashboard
+
+\begin{DoxyReturn}{\-Devuelve}
+$<$type$>$ ( description\-\_\-of\-\_\-the\-\_\-return\-\_\-value ) 
+\end{DoxyReturn}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_home_controller_a599f5b2f09e9ab0cba15ac2e08e2d3a4}{\index{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}!lista\-Avisos@{lista\-Avisos}}
+\index{lista\-Avisos@{lista\-Avisos}!App::Http::Controllers::HomeController@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}}
+\subsubsection[{lista\-Avisos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf lista\-Avisos} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_app_1_1_http_1_1_controllers_1_1_home_controller_a599f5b2f09e9ab0cba15ac2e08e2d3a4}
+\-Recibe petición \-G\-E\-T a '/dashboard/lista\-Avisos' \-Retorna la vista con los avisos de la institución, ordenados según más reciente de a 6 por página
+
+\begin{DoxyReturn}{\-Devuelve}
+$<$type$>$ ( description\-\_\-of\-\_\-the\-\_\-return\-\_\-value ) 
+\end{DoxyReturn}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_home_controller_ad1992463a8d72baca9db54556e0ada5a}{\index{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}!nuevo\-Aviso@{nuevo\-Aviso}}
+\index{nuevo\-Aviso@{nuevo\-Aviso}!App::Http::Controllers::HomeController@{\-App\-::\-Http\-::\-Controllers\-::\-Home\-Controller}}
+\subsubsection[{nuevo\-Aviso}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nuevo\-Aviso} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_app_1_1_http_1_1_controllers_1_1_home_controller_ad1992463a8d72baca9db54556e0ada5a}
+\-Recibe petición \-G\-E\-T a '/dashboard/nuevo\-Aviso' \-Retorna la vista con el formulario para crear un nuevo aviso
+
+\begin{DoxyReturn}{\-Devuelve}
+$<$type$>$ ( description\-\_\-of\-\_\-the\-\_\-return\-\_\-value ) 
+\end{DoxyReturn}
+
+
+\-La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+/home/travis/build/tvargasvicencio/ayudalab/app/\-Http/\-Controllers/\-Home\-Controller.\-php\end{DoxyCompactItemize}

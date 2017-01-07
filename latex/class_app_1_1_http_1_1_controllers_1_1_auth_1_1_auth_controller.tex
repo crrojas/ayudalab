@@ -1,0 +1,98 @@
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller}{\section{\-Referencia de la \-Clase \-Auth\-Controller}
+\label{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller}\index{\-Auth\-Controller@{\-Auth\-Controller}}
+}
+
+
+\-Diagrama de herencias de \-Auth\-Controller
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Diagrama de colaboración para \-Auth\-Controller\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller_a095c5d389db211932136b53f25f39685}{\-\_\-\-\_\-construct} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller_aa47350de63ea5295d9c9718e3d09135c}{validator} (array \$data)
+\item 
+\hyperlink{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller_a791ba6c150a0a3047c7d8735e62cad02}{create} (array \$data)
+\end{DoxyCompactItemize}
+\subsection*{\-Atributos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller_a1d19101ee5de7186666ce86a530cd501}{{\bfseries \$redirect\-To} = '/dashboard/informacion\-Institucional'}\label{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller_a1d19101ee5de7186666ce86a530cd501}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Documentación del constructor y destructor}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller_a095c5d389db211932136b53f25f39685}{\index{\-App\-::\-Http\-::\-Controllers\-::\-Auth\-::\-Auth\-Controller@{\-App\-::\-Http\-::\-Controllers\-::\-Auth\-::\-Auth\-Controller}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!App::Http::Controllers::Auth::AuthController@{\-App\-::\-Http\-::\-Controllers\-::\-Auth\-::\-Auth\-Controller}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-construct} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller_a095c5d389db211932136b53f25f39685}
+\-Create a new authentication controller instance.
+
+\begin{DoxyReturn}{\-Devuelve}
+void 
+\end{DoxyReturn}
+
+
+\subsection{\-Documentación de las funciones miembro}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller_a791ba6c150a0a3047c7d8735e62cad02}{\index{\-App\-::\-Http\-::\-Controllers\-::\-Auth\-::\-Auth\-Controller@{\-App\-::\-Http\-::\-Controllers\-::\-Auth\-::\-Auth\-Controller}!create@{create}}
+\index{create@{create}!App::Http::Controllers::Auth::AuthController@{\-App\-::\-Http\-::\-Controllers\-::\-Auth\-::\-Auth\-Controller}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf create} (
+\begin{DoxyParamCaption}
+\item[{array \$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller_a791ba6c150a0a3047c7d8735e62cad02}
+\-Create a new user instance after a valid registration.
+
+
+\begin{DoxyParams}[1]{\-Parámetros}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Devuelve}
+\hyperlink{class_app_1_1_user}{\-User} 
+\end{DoxyReturn}
+\hypertarget{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller_aa47350de63ea5295d9c9718e3d09135c}{\index{\-App\-::\-Http\-::\-Controllers\-::\-Auth\-::\-Auth\-Controller@{\-App\-::\-Http\-::\-Controllers\-::\-Auth\-::\-Auth\-Controller}!validator@{validator}}
+\index{validator@{validator}!App::Http::Controllers::Auth::AuthController@{\-App\-::\-Http\-::\-Controllers\-::\-Auth\-::\-Auth\-Controller}}
+\subsubsection[{validator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf validator} (
+\begin{DoxyParamCaption}
+\item[{array \$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller_aa47350de63ea5295d9c9718e3d09135c}
+\-Get a validator for an incoming registration request.
+
+
+\begin{DoxyParams}[1]{\-Parámetros}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Devuelve}
+
+\end{DoxyReturn}
+
+
+\-La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+/home/travis/build/tvargasvicencio/ayudalab/app/\-Http/\-Controllers/\-Auth/\-Auth\-Controller.\-php\end{DoxyCompactItemize}

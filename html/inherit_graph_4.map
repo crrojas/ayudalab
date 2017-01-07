@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$class_app_1_1_http_1_1_controllers_1_1_controller.html" title="Controller" alt="" coords="7,112,84,141"/>
+<area shape="rect" id="node3" href="$class_app_1_1_http_1_1_controllers_1_1_auth_1_1_auth_controller.html" title="AuthController" alt="" coords="152,5,256,35"/>
+<area shape="rect" id="node5" href="$class_app_1_1_http_1_1_controllers_1_1_auth_1_1_password_controller.html" title="PasswordController" alt="" coords="136,59,272,88"/>
+<area shape="rect" id="node7" href="$class_app_1_1_http_1_1_controllers_1_1_home_controller.html" title="HomeController" alt="" coords="148,112,260,141"/>
+<area shape="rect" id="node9" href="$class_app_1_1_http_1_1_controllers_1_1_homepage_controller.html" title="HomepageController" alt="" coords="133,165,275,195"/>
+<area shape="rect" id="node11" href="$class_app_1_1_http_1_1_controllers_1_1_institucion_controller.html" title="InstitucionController" alt="" coords="135,219,273,248"/>
+</map>
