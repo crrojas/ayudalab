@@ -51,6 +51,7 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:12: warning: Compound App::Http::Controllers::Auth::AuthController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/seeds/InstitucionTableSeeder.php:8: warning: Compound InstitucionTableSeeder is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2014_10_12_100000_create_password_resets_table.php:7: warning: Compound CreatePasswordResetsTable is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/StorageController.php:11: warning: Compound App::Http::Controllers::StorageController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/User.php:8: warning: Compound App::User is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:12: warning: Compound App::Http::Controllers::InstitucionController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_12_26_184042_agregar_campo_booleano_superuser_tabla_user.php:7: warning: Compound AgregarCampoBooleanoSuperuserTablaUser is not documented.
@@ -125,6 +126,9 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:30: warning: The following parameters of App::Http::Controllers::InstitucionController::verAviso($institucion,$aviso) are not documented:
   parameter 'institucion'
   parameter 'aviso'
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/StorageController.php:12: warning: Member index() (function) of class App::Http::Controllers::StorageController is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/StorageController.php:19: warning: Member save(Request $r) (function) of class App::Http::Controllers::StorageController is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/StorageController.php:34: warning: Member mostrarImagen($archivo) (function) of class App::Http::Controllers::StorageController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:31: warning: Member $redirectTo (variable) of class App::Http::Controllers::Auth::AuthController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:46: warning: Found unknown command `\Illuminate'
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:46: warning: Found unknown command `\Contracts'
