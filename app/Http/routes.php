@@ -35,4 +35,8 @@ Route::get('dashboard/institucion/{institucion?}/aviso/{aviso?}', 'HomeControlle
 Route::post('dashboard/institucion/{institucion?}/aviso/{aviso?}', 'HomeController@guardarEditarAviso');
 
 
+Route::get('formulario', 'StorageController@index');
+Route::post('formulario', 'StorageController@save');
+
+Route::get('imagen/{id}','StorageController@mostrarImagen');
 
