@@ -25,6 +25,36 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .navbar-inverse {
+            background-color: #00ab9c;
+            border-color: #bcbcbc;
+        }
+        .imagen-nav {
+            height: 50px;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+            color: #000000;
+            background-color: transparent;
+            font-weight: bold;
+        }
+        body{
+            background-color: #bcbcbc;
+        }
+        .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+            z-index: 2;
+            color: #fff;
+            background-color: #f51b28;
+            border-color: #dddddd;
+        }
+        .list-group{
+            font-weight: bold;
+        }
+    </style>
 
 </head>
 
@@ -41,7 +71,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">SocialBook</a>
+                <a href="/"><img class="imagen-nav" src="{{asset('assets/images/logo2.png')}}"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -90,8 +120,11 @@
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Instituciones</p>
+
+                @yield('breadcrumb')
+                
                 <div class="list-group">
+                    <p class="list-group-item active">Instituciones</p>
                     @foreach ($instituciones as $key => $institucion)
                         <a href="/institucion/{{$institucion->nom_institucion}}" class="list-group-item">{{ $institucion->nombre }}</a>
                                 

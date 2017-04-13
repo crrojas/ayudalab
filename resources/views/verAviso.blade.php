@@ -3,6 +3,13 @@
 <title>SocialBook - {{ $institucion->nombre }} - {{$aviso->titulo}}</title>
 @endsection
 
+@section('breadcrumb')
+<ol class="breadcrumb">
+    <li><a href="/" >Inicio</a></li>
+    <li><a href="/" class="active">{{ $institucion->nombre }}</a></li>
+</ol>
+@endsection
+
 @section('content')
 <div class="col-md-9">
 <!-- Blog Post -->
