@@ -13,8 +13,8 @@ class AgregarCampoRutInstAUser extends Migration
     public function up()
     {
         Schema::table('users', function ($table) {
-            $table->string('rut_inst');
-            $table->foreign('rut_inst')->references('rut_inst')->on('institucion');
+            $table->integer('id_institucion')->unsigned();
+            $table->foreign('id_institucion')->references('id_institucion')->on('institucion');
         });
     }
 
@@ -26,7 +26,7 @@ class AgregarCampoRutInstAUser extends Migration
     public function down()
     {
         Schema::table('users', function ($table) {
-            $table->dropColumn('rut_inst');
+            $table->dropColumn('id_institucion');
         });
     }
 }

@@ -22,7 +22,7 @@ class InstitucionTableSeeder extends Seeder
         	'mail' => 'asda@asdasd.com',
         	'telefono' => 98123741,
         	'mision' => "asdasdjalsd",
-        	"vision" => "alskdmalskdmlaskdlasd"
+        	"vision" => "alskdmalskdmlaskdlasd",
        	));
         $this->command->info('Institucion creada.');
 
@@ -33,7 +33,7 @@ class InstitucionTableSeeder extends Seeder
             'mail' => 'asd2@asdasd.com',
             'telefono' => 93456512,
             'mision' => "tyutyutyut",
-            "vision" => "rttyhdfghasdsdfsdfgdf"
+            "vision" => "rttyhdfghasdsdfsdfgdf",
         ));
         $this->command->info('Institucion 2 creada.');
 
