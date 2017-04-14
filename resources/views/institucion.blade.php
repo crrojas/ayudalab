@@ -7,7 +7,7 @@
 <div class="col-md-9">
 
     <div class="thumbnail">
-        <img class="img-responsive" src="http://placehold.it/800x300" alt="">
+        <img class="img-responsive" src="{{$imagen->ruta}}" alt="{{$imagen->descripcion}}">
         <div class="caption-full">
             <h3>Mísión</h3>
             <p>{{ $institucion->mision }}</p>

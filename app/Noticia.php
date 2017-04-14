@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Aviso extends Model
+class Noticia extends Model
 {
-    protected $table = 'aviso';
+    protected $table = 'noticia';
 
     protected $fillable = ['descripcion', 'titulo', 'rut_inst', 'user_id'];
 
@@ -32,6 +32,6 @@ class Aviso extends Model
 
     public function imagenes(){
         //hasMany(ClaseDestino, llave foranea, llave local a la que apunta la FK)
-        return $this->hasMany('App\ImagenEvento','id_aviso','id_aviso');
+        return $this->hasMany('App\ImagenEvento','id_noticia','id_noticia');
     }
 }

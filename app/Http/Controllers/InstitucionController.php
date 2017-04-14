@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Institucion;
 use App\Aviso;
+use App\Imagen;
 
 class InstitucionController extends Controller
 {
@@ -23,7 +24,13 @@ class InstitucionController extends Controller
     	$institucion_conEspacios  = str_replace("_"," ",$institucion);
     	$institucion = Institucion::where('nombre',$institucion_conEspacios)->first();
     	$instituciones = Controller::listado_instituciones();
-    	return view('institucion',compact('institucion', 'instituciones'));  
+
+
+        $imagen = Imagen::where('id_institucion','=',$institucion->id_institucion)->first();
+        //$ruta = $institucion->imagen();
+
+        //dd($imagen);
+    	return view('institucion',compact('institucion', 'instituciones','imagen'));  
     }
 
 
