@@ -37,12 +37,16 @@ Warning: The selected output language "spanish" has not been updated
 since release 1.7.5.  As a result some sentences may appear in English.
 
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2017_04_11_032423_tabla_imagen.php:7: warning: Compound TablaImagen is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/seeds/ImagenTableSeeder.php:8: warning: Compound ImagenTableSeeder is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/seeds/DatabaseSeeder.php:9: warning: Compound DatabaseSeeder is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/seeds/AvisoTableSeeder.php:8: warning: Compound AvisoTableSeeder is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:8: warning: Compound App::Aviso is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/tests/VerInstitucionesTest.php:8: warning: Compound VerInstitucionesTest is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/ImagenEvento.php:9: warning: Compound App::ImagenEvento is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/migrations/2017_04_12_195824_tabla_imagen_evento.php:7: warning: Compound TablaImagenEvento is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_12_23_025721_agregar_campo_rut_inst_a_user.php:7: warning: Compound AgregarCampoRutInstAUser is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:8: warning: Compound App::Institucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:9: warning: Compound App::Institucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/migrations/2017_04_12_183436_tabla_noticia.php:7: warning: Compound TablaNoticia is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/tests/ExampleTest.php:8: warning: Compound ExampleTest is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2014_10_12_000000_create_users_table.php:7: warning: Compound CreateUsersTable is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/PasswordController.php:9: warning: Compound App::Http::Controllers::Auth::PasswordController is not documented.
@@ -55,7 +59,8 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2014_10_12_100000_create_password_resets_table.php:7: warning: Compound CreatePasswordResetsTable is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/StorageController.php:12: warning: Compound App::Http::Controllers::StorageController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/User.php:8: warning: Compound App::User is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:12: warning: Compound App::Http::Controllers::InstitucionController is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:8: warning: Compound App::Noticia is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:13: warning: Compound App::Http::Controllers::InstitucionController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_12_26_184042_agregar_campo_booleano_superuser_tabla_user.php:7: warning: Compound AgregarCampoBooleanoSuperuserTablaUser is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_11_07_194019_crear_tabla_aviso.php:7: warning: Compound CrearTablaAviso is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_11_07_192547_crear_tabla_institucion.php:7: warning: Compound CrearTablaInstitucion is not documented.
@@ -69,18 +74,34 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/tests/TestCase.php:14: warning: Found unknown command `\Illuminate'
 /home/travis/build/tvargasvicencio/ayudalab/tests/TestCase.php:14: warning: Found unknown command `\Foundation'
 /home/travis/build/tvargasvicencio/ayudalab/tests/TestCase.php:14: warning: Found unknown command `\Application'
+/home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:33: warning: Member imagenes() (function) of class App::Aviso is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:9: warning: Member $table (variable) of class App::Aviso is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:11: warning: Member $fillable (variable) of class App::Aviso is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:15: warning: Unsupported xml/html tag <type> found
 /home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:25: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:19: warning: Member institucion() (function) of class App::Imagen is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:11: warning: Member $dates (variable) of class App::Imagen is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:13: warning: Member $table (variable) of class App::Imagen is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:15: warning: Member $guarded (variable) of class App::Imagen is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:17: warning: Member $primaryKey (variable) of class App::Imagen is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:9: warning: Member $table (variable) of class App::Institucion is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:16: warning: Member $fillable (variable) of class App::Institucion is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:21: warning: Unsupported xml/html tag <type> found
-/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:31: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/ImagenEvento.php:19: warning: Member aviso() (function) of class App::ImagenEvento is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/ImagenEvento.php:23: warning: Member noticia() (function) of class App::ImagenEvento is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/ImagenEvento.php:11: warning: Member $dates (variable) of class App::ImagenEvento is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/ImagenEvento.php:13: warning: Member $table (variable) of class App::ImagenEvento is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/ImagenEvento.php:15: warning: Member $guarded (variable) of class App::ImagenEvento is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/ImagenEvento.php:17: warning: Member $primaryKey (variable) of class App::ImagenEvento is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:32: warning: Member noticias() (function) of class App::Institucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:38: warning: Member imagen() (function) of class App::Institucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:11: warning: Member $dates (variable) of class App::Institucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:12: warning: Member $table (variable) of class App::Institucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:19: warning: Member $fillable (variable) of class App::Institucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:24: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:44: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:33: warning: Member imagenes() (function) of class App::Noticia is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:9: warning: Member $table (variable) of class App::Noticia is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:11: warning: Member $fillable (variable) of class App::Noticia is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:15: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:25: warning: Unsupported xml/html tag <type> found
 /home/travis/build/tvargasvicencio/ayudalab/app/User.php:16: warning: Member $fillable (variable) of class App::User is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/User.php:25: warning: Member $hidden (variable) of class App::User is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/User.php:30: warning: Unsupported xml/html tag <type> found
@@ -122,14 +143,14 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:177: warning: Unsupported xml/html tag <type> found
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:116: warning: Unsupported xml/html tag <type> found
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomepageController.php:18: warning: Unsupported xml/html tag <type> found
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:13: warning: argument 'type' of command @param is not found in the argument list of InstitucionController::index($institucion)
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:18: warning: Unsupported xml/html tag <type> found
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:13: warning: The following parameters of App::Http::Controllers::InstitucionController::index($institucion) are not documented:
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:14: warning: argument 'type' of command @param is not found in the argument list of InstitucionController::index($institucion)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:19: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:14: warning: The following parameters of App::Http::Controllers::InstitucionController::index($institucion) are not documented:
   parameter 'institucion'
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:30: warning: argument 'type' of command @param is not found in the argument list of InstitucionController::verAviso($institucion,$aviso)
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:30: warning: argument 'type' of command @param is not found in the argument list of InstitucionController::verAviso($institucion,$aviso)
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:38: warning: Unsupported xml/html tag <type> found
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:30: warning: The following parameters of App::Http::Controllers::InstitucionController::verAviso($institucion,$aviso) are not documented:
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:37: warning: argument 'type' of command @param is not found in the argument list of InstitucionController::verAviso($institucion,$aviso)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:37: warning: argument 'type' of command @param is not found in the argument list of InstitucionController::verAviso($institucion,$aviso)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:45: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:37: warning: The following parameters of App::Http::Controllers::InstitucionController::verAviso($institucion,$aviso) are not documented:
   parameter 'institucion'
   parameter 'aviso'
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/StorageController.php:13: warning: Member index() (function) of class App::Http::Controllers::StorageController is not documented.
