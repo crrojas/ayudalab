@@ -10,6 +10,7 @@ class Institucion extends Model
     use SoftDeletes;
     protected $dates = ['deleted_at'];
     protected $table = 'institucion';
+    protected $primaryKey="id_institucion";
     protected $fillable = ['rut_inst',
 		'mision',
 		'vision',
@@ -36,7 +37,8 @@ class Institucion extends Model
 
     //indica que una institucion tiene una imagen (Esta es la imagen principal de cada institución)
     public function imagen(){
-        return $this->hasOne('App\Imagen','id_imagen', 'id_imagen');
+        return $this->hasOne('App\Imagen','id_institucion', 'id_institucion');
+       // return $this->hasOne('App\Imagen','id_imagen', 'id_imagen');
     }
 
     /**

@@ -26,7 +26,8 @@ class InstitucionController extends Controller
     	$instituciones = Controller::listado_instituciones();
 
 
-        $imagen = Imagen::where('id_institucion','=',$institucion->id_institucion)->first();
+        //$imagen = Imagen::where('id_institucion','=',$institucion->id_institucion)->first();
+        $imagen = $institucion->imagen;
         //$ruta = $institucion->imagen();
 
         //dd($imagen);
