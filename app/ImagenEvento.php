@@ -17,11 +17,11 @@ class ImagenEvento extends Model
     protected $primaryKey='id_imagen';
 
     public function aviso(){
-    	return $this->belongsTo('App\Aviso','id_aviso');
+    	return $this->belongsTo('App\Aviso','id_aviso', 'id_aviso');
     }
 
     public function noticia(){
-    	return $this->belongsTo('App\Aviso','id_noticia');
+    	return $this->belongsTo('App\Noticia','id_noticia', 'id_noticia');
     }
 
 }

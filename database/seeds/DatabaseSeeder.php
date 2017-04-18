@@ -16,10 +16,10 @@ class DatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        $this->call(InstitucionTableSeeder::class);
-        $this->call(AvisoTableSeeder::class);
-        $this->call(ImagenTableSeeder::class);
-
+        //$this->call(InstitucionTableSeeder::class);
+        //$this->call(AvisoTableSeeder::class);
+        //$this->call(ImagenTableSeeder::class);
+        $this->call(ImagenAviso::class);
 
         $this->command->info('SocialBook app seeds finished.');
 

@@ -26,12 +26,12 @@ class Institucion extends Model
      * @return     <type>  ( description_of_the_return_value )
      */
     public function avisos() {
-    	return $this->hasMany('aviso');
+    	return $this->hasMany('App\Aviso','id_institucion', 'id_institucion');
 
     }
 
     public function noticias(){
-        return $this->hasMany('App\Noticia');
+        return $this->hasMany('App\Noticia', 'id_institucion', 'id_institucion');
     }
 
 

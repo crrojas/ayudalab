@@ -17,7 +17,7 @@ class Aviso extends Model
      */
     public function institucion()
     {
-        return $this->belongsTo('Institucion');
+        return $this->belongsTo('App\Institucion', 'id_institucion', 'id_institucion');
     }
 
     /**
