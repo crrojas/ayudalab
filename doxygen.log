@@ -76,29 +76,32 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/tests/TestCase.php:14: warning: Found unknown command `\Application'
 /home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:33: warning: Member imagenes() (function) of class App::Aviso is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:9: warning: Member $table (variable) of class App::Aviso is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:10: warning: Member $primaryKey (variable) of class App::Aviso is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:11: warning: Member $fillable (variable) of class App::Aviso is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:15: warning: Unsupported xml/html tag <type> found
 /home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:25: warning: Unsupported xml/html tag <type> found
-/home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:19: warning: Member institucion() (function) of class App::Imagen is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:18: warning: Member institucion() (function) of class App::Imagen is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:11: warning: Member $dates (variable) of class App::Imagen is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:13: warning: Member $table (variable) of class App::Imagen is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:15: warning: Member $guarded (variable) of class App::Imagen is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:17: warning: Member $primaryKey (variable) of class App::Imagen is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:12: warning: Member $table (variable) of class App::Imagen is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:14: warning: Member $guarded (variable) of class App::Imagen is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:16: warning: Member $primaryKey (variable) of class App::Imagen is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/ImagenEvento.php:19: warning: Member aviso() (function) of class App::ImagenEvento is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/ImagenEvento.php:23: warning: Member noticia() (function) of class App::ImagenEvento is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/ImagenEvento.php:11: warning: Member $dates (variable) of class App::ImagenEvento is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/ImagenEvento.php:13: warning: Member $table (variable) of class App::ImagenEvento is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/ImagenEvento.php:15: warning: Member $guarded (variable) of class App::ImagenEvento is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/ImagenEvento.php:17: warning: Member $primaryKey (variable) of class App::ImagenEvento is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:32: warning: Member noticias() (function) of class App::Institucion is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:38: warning: Member imagen() (function) of class App::Institucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:33: warning: Member noticias() (function) of class App::Institucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:39: warning: Member imagen() (function) of class App::Institucion is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:11: warning: Member $dates (variable) of class App::Institucion is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:12: warning: Member $table (variable) of class App::Institucion is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:19: warning: Member $fillable (variable) of class App::Institucion is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:24: warning: Unsupported xml/html tag <type> found
-/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:44: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:13: warning: Member $primaryKey (variable) of class App::Institucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:20: warning: Member $fillable (variable) of class App::Institucion is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:25: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:46: warning: Unsupported xml/html tag <type> found
 /home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:33: warning: Member imagenes() (function) of class App::Noticia is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:9: warning: Member $table (variable) of class App::Noticia is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:10: warning: Member $primaryKey (variable) of class App::Noticia is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:11: warning: Member $fillable (variable) of class App::Noticia is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:15: warning: Unsupported xml/html tag <type> found
 /home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:25: warning: Unsupported xml/html tag <type> found
@@ -147,10 +150,10 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:19: warning: Unsupported xml/html tag <type> found
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:14: warning: The following parameters of App::Http::Controllers::InstitucionController::index($institucion) are not documented:
   parameter 'institucion'
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:37: warning: argument 'type' of command @param is not found in the argument list of InstitucionController::verAviso($institucion,$aviso)
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:37: warning: argument 'type' of command @param is not found in the argument list of InstitucionController::verAviso($institucion,$aviso)
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:45: warning: Unsupported xml/html tag <type> found
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:37: warning: The following parameters of App::Http::Controllers::InstitucionController::verAviso($institucion,$aviso) are not documented:
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:38: warning: argument 'type' of command @param is not found in the argument list of InstitucionController::verAviso($institucion,$aviso)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:38: warning: argument 'type' of command @param is not found in the argument list of InstitucionController::verAviso($institucion,$aviso)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:46: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:38: warning: The following parameters of App::Http::Controllers::InstitucionController::verAviso($institucion,$aviso) are not documented:
   parameter 'institucion'
   parameter 'aviso'
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/StorageController.php:13: warning: Member index() (function) of class App::Http::Controllers::StorageController is not documented.
