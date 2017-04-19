@@ -30,7 +30,12 @@
         <hr>
 
         <!-- Preview Image -->
-        <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+
+        @if($aviso->imagenes->first())
+            <img class="img-responsive" style="width: 900px;height: 330px;" src="{{$aviso->imagenes->first()->ruta}}" alt="{{$aviso->imagenes->first()->descripcion}}">
+        @else
+            <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+        @endif
 
         <hr>
         <!-- Redes Sociales -->

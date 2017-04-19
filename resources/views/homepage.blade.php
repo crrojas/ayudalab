@@ -85,7 +85,7 @@
                     <img src="http://placehold.it/320x150" alt="" >
                 @endif
                 <div class="caption">
-                    <h4><a href="institucion/{{$aviso->nom_institucion}}/aviso/{{$aviso->id}}">{{ $aviso->titulo }}</a>
+                    <h4><a href="institucion/{{$aviso->nom_institucion}}/aviso/{{$aviso->id_aviso}}">{{ $aviso->titulo }}</a>
                     </h4>
                     <p>{{ $aviso->descripcion }}</p>
                 </div>

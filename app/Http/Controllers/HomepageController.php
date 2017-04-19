@@ -24,7 +24,7 @@ class HomepageController extends Controller
     	$avisos = Aviso::orderBy('created_at', 'desc')->paginate(6);
     	foreach ($avisos as $key => $aviso) {
     		foreach ($instituciones as $key => $institucion) {
-    			if ($aviso->rut_inst == $institucion->rut_inst) {
+    			if ($aviso->id_institucion == $institucion->id_institucion) {
     				$aviso['nom_institucion'] = $institucion->nom_institucion;
     			}
     		}

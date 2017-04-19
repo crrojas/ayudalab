@@ -50,7 +50,7 @@ class InstitucionController extends Controller
         $aux = $institucion;
         $institucion_conEspacios  = str_replace("_"," ",$institucion);
         $institucion = Institucion::where('nombre',$institucion_conEspacios)->first();
-        $aviso = Aviso::where('id',$aviso)->where('rut_inst',$institucion->rut_inst)->first();
+        $aviso = Aviso::where('id_aviso',$aviso)->first();
         if ($aviso) {
             $instituciones = Controller::listado_instituciones();
             return view('verAviso',compact('institucion', 'instituciones', 'aviso', 'aux'));  
