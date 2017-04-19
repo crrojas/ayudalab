@@ -60,6 +60,7 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/StorageController.php:12: warning: Compound App::Http::Controllers::StorageController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/User.php:8: warning: Compound App::User is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:8: warning: Compound App::Noticia is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/seeds/ImagenAviso.php:8: warning: Compound ImagenAviso is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:13: warning: Compound App::Http::Controllers::InstitucionController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_12_26_184042_agregar_campo_booleano_superuser_tabla_user.php:7: warning: Compound AgregarCampoBooleanoSuperuserTablaUser is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_11_07_194019_crear_tabla_aviso.php:7: warning: Compound CrearTablaAviso is not documented.
