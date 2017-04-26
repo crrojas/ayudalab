@@ -34,6 +34,7 @@ class CrearTablaInstitucion extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::drop('institucion');
     }
 }

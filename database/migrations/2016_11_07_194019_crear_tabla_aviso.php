@@ -18,10 +18,10 @@ class CrearTablaAviso extends Migration
             $table->string('descripcion', 200);
             
             $table->integer('id_institucion')->unsigned();
-            $table->foreign('id_institucion')->references('id_institucion')->on('institucion');
+            $table->foreign('id_institucion')->references('id_institucion')->on('institucion')->onDelete('cascade');
 
             $table->integer('user_id')->unsigned()->nullable();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
             $table->softDeletes();
 
@@ -35,6 +35,7 @@ class CrearTablaAviso extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::drop('aviso');
     }
 }

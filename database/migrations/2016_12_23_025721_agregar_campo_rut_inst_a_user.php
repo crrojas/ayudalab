@@ -14,7 +14,7 @@ class AgregarCampoRutInstAUser extends Migration
     {
         Schema::table('users', function ($table) {
             $table->integer('id_institucion')->unsigned();
-            $table->foreign('id_institucion')->references('id_institucion')->on('institucion');
+            $table->foreign('id_institucion')->references('id_institucion')->on('institucion')->onDelete('cascade');
         });
     }
 
@@ -26,7 +26,7 @@ class AgregarCampoRutInstAUser extends Migration
     public function down()
     {
         Schema::table('users', function ($table) {
-            $table->dropColumn('id_institucion');
+            //$table->dropColumn('id_institucion');
         });
     }
 }

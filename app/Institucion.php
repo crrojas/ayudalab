@@ -47,7 +47,7 @@ class Institucion extends Model
      * @return     <type>  ( description_of_the_return_value )
      */
     public function user() {
-    	return $this->hasMany('user');
+    	return $this->hasMany('App\User', 'id_institucion','id_institucion');
 
     }
 }

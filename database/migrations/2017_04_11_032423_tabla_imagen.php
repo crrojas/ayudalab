@@ -18,7 +18,7 @@ class TablaImagen extends Migration
             $table->string('ruta');
 
             $table->integer('id_institucion')->unsigned();
-            $table->foreign('id_institucion')->references('id_institucion')->on('institucion');
+            $table->foreign('id_institucion')->references('id_institucion')->on('institucion')->onDelete('cascade');
 
             $table->softDeletes();
             $table->timestamps();
@@ -32,6 +32,7 @@ class TablaImagen extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::drop('imagen_institucion');
     }
 }

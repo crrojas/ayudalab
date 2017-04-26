@@ -32,7 +32,7 @@ class User extends Authenticatable
      */
     public function aviso()
     {
-        return $this->hasMany('aviso');
+        return $this->hasMany('App\Aviso');
     }
 
     /**
@@ -42,6 +42,6 @@ class User extends Authenticatable
      */
     public function institucion()
     {
-        return $this->belongsTo('institucion');
+        return $this->belongsTo('App\Institucion', 'id_institucion', 'id_institucion');
     }
 }
