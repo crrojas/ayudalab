@@ -38,12 +38,12 @@
             font-weight: bold;
         }
         .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-            color: #000000;
+            color: #bcbcbc;
             background-color: transparent;
             font-weight: bold;
         }
         body{
-            background-color: #bcbcbc;
+            background-color: #ffffff;
         }
         .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
             z-index: 2;

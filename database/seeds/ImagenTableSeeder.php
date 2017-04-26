@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use App\Imagen;
 use App\Institucion;
+use Illuminate\Database\Seeder;
 
 class ImagenTableSeeder extends Seeder
 {
