@@ -30,7 +30,7 @@ $factory->defineAs(App\Aviso::class, 'inst1', function (Faker\Generator $faker){
 	return[
  		'titulo' => $faker->sentence(5),
  		'descripcion' => $faker->sentence(15),
- 		'id_institucion' => $institucion->id_institucion
+ 		'id_institucion' => 1 //cambio temporal
 	];
 });
 
@@ -39,6 +39,6 @@ $factory->defineAs(App\Aviso::class, 'inst2', function (Faker\Generator $faker){
 	return[
  		'titulo' => $faker->sentence(5),
  		'descripcion' => $faker->sentence(15),
- 		'id_institucion' => $institucion->id_institucion
+ 		'id_institucion' => 2 //cambio temporal
 	];
 });
