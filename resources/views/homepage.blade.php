@@ -82,7 +82,7 @@
                 @if($aviso->imagenes->first())
                     <img src="{{$aviso->imagenes->first()->ruta}}" style="width: 320px;height: 150px;" alt="">
                 @else
-                    <img src="http://placehold.it/320x150" alt="" >
+                    <img src="http://placehold.it/320x150" style="width: 320px;height: 150px;" alt="" >
                 @endif
                 <div class="caption">
                     <h4><a href="institucion/{{$aviso->nom_institucion}}/aviso/{{$aviso->id_aviso}}">{{ $aviso->titulo }}</a>
