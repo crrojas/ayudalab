@@ -16,6 +16,7 @@ class ImagenAviso extends Seeder
         $imagen = new ImagenEvento(array(
         	'ruta' => '/almacenamiento_imagenes/1.jpg',
         	'descripcion' => 'foto de vamo a calmarno 1',
+            'id_institucion' => 1,
        	));
         $institucion = Institucion::where('id_institucion','=','1')->first();
         $aviso = $institucion->avisos->first();
@@ -25,6 +26,7 @@ class ImagenAviso extends Seeder
        	$imagen = new ImagenEvento(array(
         	'ruta' => '/almacenamiento_imagenes/2.jpg',
         	'descripcion' => 'foto de vamo a calmarno 2',
+            'id_institucion' => 2,
        	));
         $institucion = Institucion::where('id_institucion','=','2')->first();
         $aviso = $institucion->avisos->first();
