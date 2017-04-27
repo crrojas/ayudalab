@@ -159,7 +159,7 @@ since release 1.7.5.  As a result some sentences may appear in English.
   parameter 'aviso'
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/StorageController.php:13: warning: Member index() (function) of class App::Http::Controllers::StorageController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/StorageController.php:20: warning: Member save(Request $r) (function) of class App::Http::Controllers::StorageController is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/StorageController.php:42: warning: Member mostrarImagen($id) (function) of class App::Http::Controllers::StorageController is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/StorageController.php:44: warning: Member mostrarImagen($id) (function) of class App::Http::Controllers::StorageController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:31: warning: Member $redirectTo (variable) of class App::Http::Controllers::Auth::AuthController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:46: warning: Found unknown command `\Illuminate'
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:46: warning: Found unknown command `\Contracts'
