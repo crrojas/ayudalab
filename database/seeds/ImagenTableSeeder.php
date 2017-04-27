@@ -19,7 +19,7 @@ class ImagenTableSeeder extends Seeder
             'id_institucion' => 1,
        	));
         $institucion = Institucion::where('id_institucion','=','1')->first();
-        $imagen->institucion()->associate($institucion);
+        //$imagen->institucion()->associate($institucion);
         $imagen->save();
 
        	$imagen = new Imagen(array(
@@ -28,7 +28,7 @@ class ImagenTableSeeder extends Seeder
             'id_institucion' => 2,
        	));
         $institucion = Institucion::where('id_institucion','=','2')->first();
-        $imagen->institucion()->associate($institucion);
+        //$imagen->institucion()->associate($institucion);
         $imagen->save();
 
     }
