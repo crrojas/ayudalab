@@ -25,7 +25,7 @@ class StorageController extends Controller
        $nombre = $file->getClientOriginalName();
      
        //indicamos que queremos guardar un nuevo archivo en el disco publico (mirar filesystems.php)
-       \Storage::disk('public')->put($nombre,  \File::get($file));
+       \Storage::disk('public')->put("/SanAntonio/".$nombre,  \File::get($file));
 
        //generamos la ruta del imagen
        $ruta = "/almacenamiento_imagenes/".$nombre;
@@ -33,6 +33,8 @@ class StorageController extends Controller
        //guardamos la ruta  en  la base de datos
  		$imagen = new Imagen;
  		$imagen->ruta = $ruta;
+		$imagen->descripcion = "pato qlo";
+		$imagen->id_institucion = 1;
 
  		$imagen->save();
 //       return "archivo guardado";
