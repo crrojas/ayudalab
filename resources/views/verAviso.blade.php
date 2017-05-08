@@ -6,11 +6,11 @@
     <meta property="og:url" content="{{url()->current()}}" />
     <meta property="og:site_name" content="Socialbook">
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="asdasdasd" />
-    <meta property="og:description" content="Asdasd" />
+    <meta property="og:title" content="{{$aviso->titulo}}" />
+    <meta property="og:description" content="{{$aviso->descripcion}}" />
     <meta property="og:image" content="{{$aviso->imagenes->first()->ruta}}" />
-    <meta property="og:image:width" content="820" />
-    <meta property="og:image:height" content="385" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="600" />
 
 
 @endsection
