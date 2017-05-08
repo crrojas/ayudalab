@@ -9,8 +9,8 @@
     <meta property="og:title" content="{{$aviso->titulo}}" />
     <meta property="og:description" content="{{$aviso->descripcion}}" />
     <meta property="og:image" content="{{$aviso->imagenes->first()->ruta}}" />
-    <meta property="og:image:width" content="800" />
-    <meta property="og:image:height" content="600" />
+    <meta property="og:image:width" content="838" />
+    <meta property="og:image:height" content="638" />
 
 
 @endsection
