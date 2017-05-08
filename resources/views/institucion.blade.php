@@ -3,18 +3,14 @@
 <title>SocialBook - {{ $institucion->nombre }}</title>
 @endsection
 
-@section('breadcrumb')
-<ol class="breadcrumb">
-    <li><a href="/" >Inicio</a></li>
-    <li><a href="/" class="active">{{ $institucion->nombre }}</a></li>
-</ol>
-@endsection
-
 @section('content')
 <div class="col-md-9">
-
+    <ol class="breadcrumb">
+        <li><a href="/" >Inicio</a></li>
+        <li><a href="/institucion/{{ $institucion->nom_institucion }}" class="active" >{{ $institucion->nombre }}</a></li>
+    </ol>
     <div class="thumbnail">
-        <img class="img-responsive" src="{{$imagen->ruta}}" alt="{{$imagen->descripcion}}" style="width: 800px;height: 300px;>
+        <img class="img-responsive" src="{{$imagen->ruta}}" alt="{{$imagen->descripcion}}" style="width: 800px;height: 300px;">
         <div class="caption-full">
             <h3>Mísión</h3>
             <p>{{ $institucion->mision }}</p>
@@ -32,58 +28,37 @@
         </div>
     </div>
 
-    <div class="well">
+         <div class="row">
+            <h1 class="text-center">Avisos</h1><br>
+            @foreach ($avisos as $key => $aviso)
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                    @if($aviso->imagenes->first())
+                        <img src="{{$aviso->imagenes->first()->ruta}}" style="width: 320px;height: 150px;" alt="">
+                    @else
+                        <img src="http://placehold.it/320x150" style="width: 320px;height: 150px;" alt="" >
+                    @endif
+                    <div class="caption">
+                        <h4><a href="/institucion/{{$aviso->nom_institucion}}/aviso/{{$aviso->id_aviso}}">{{ $aviso->titulo }}</a>
+                        </h4>
+                        <p>{{ $aviso->descripcion }}</p>
+                    </div>
+                    <!-- <div class="ratings">
+                        <p class="pull-right">15 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                    </div> -->
+                </div>
+            </div>      
+            @endforeach
+            {{ $avisos->links() }}
 
-        <div class="text-right">
-            <a class="btn btn-success">Leave a Review</a>
         </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="col-md-12">
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-                Anonymous
-                <span class="pull-right">10 days ago</span>
-                <p>This product was great in terms of quality. I would definitely buy another!</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="col-md-12">
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-                Anonymous
-                <span class="pull-right">12 days ago</span>
-                <p>I've alredy ordered another one!</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="col-md-12">
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-                Anonymous
-                <span class="pull-right">15 days ago</span>
-                <p>I've seen some better than this, but not at this price. I definitely recommend this item.</p>
-            </div>
-        </div>
-
-    </div>
 
 </div>
 @endsection

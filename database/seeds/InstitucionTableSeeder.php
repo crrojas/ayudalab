@@ -37,5 +37,27 @@ class InstitucionTableSeeder extends Seeder
         ));
         $this->command->info('Institucion 2 creada.');
 
+        $institucion = Institucion::create(array(
+            'rut_inst' => '92.164.732-2',
+            'nombre' => 'CIFAN',
+            'direccion' => 'calle falsa 346',
+            'mail' => 'asd3@asdasd.com',
+            'telefono' => 93456513,
+            'mision' => "tyutyutyuast",
+            "vision" => "rttyhdfghasdsddasdfsdfgdf",
+        ));
+        $this->command->info('Institucion 3 creada.');
+
+        $institucion = Institucion::create(array(
+            'rut_inst' => '92.164.732-3',
+            'nombre' => 'Hogar Bella Existencia',
+            'direccion' => 'calle falsa 347',
+            'mail' => 'asd4@asdasd.com',
+            'telefono' => 93456514,
+            'mision' => "tyutyutyutasdasasd",
+            "vision" => "rttyhdfghasdsdasdasfsdfgdf",
+        ));
+        $this->command->info('Institucion 4 creada.');
+
     }
 }

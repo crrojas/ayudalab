@@ -3,12 +3,6 @@
 <title>SocialBook - Donde se reunen las ganas de ayudar</title>
 @endsection
 
-@section('breadcrumb')
-<ol class="breadcrumb">
-    <li><a href="/" class="active">Inicio</a></li>
-</ol>
-@endsection
-
 @section('content')
 
 <?php 
@@ -85,11 +79,11 @@
                     <img src="http://placehold.it/320x150" style="width: 320px;height: 150px;" alt="" >
                 @endif
                 <div class="caption">
-                    <h4><a href="institucion/{{$aviso->nom_institucion}}/aviso/{{$aviso->id_aviso}}">{{ $aviso->titulo }}</a>
+                    <h4><a href="/institucion/{{$aviso->nom_institucion}}/aviso/{{$aviso->id_aviso}}">{{ $aviso->titulo }}</a>
                     </h4>
                     <p>{{ $aviso->descripcion }}</p>
                 </div>
-                <div class="ratings">
+                <!-- <div class="ratings">
                     <p class="pull-right">15 reviews</p>
                     <p>
                         <span class="glyphicon glyphicon-star"></span>
@@ -98,7 +92,7 @@
                         <span class="glyphicon glyphicon-star"></span>
                         <span class="glyphicon glyphicon-star"></span>
                     </p>
-                </div>
+                </div> -->
             </div>
         </div>      
         @endforeach

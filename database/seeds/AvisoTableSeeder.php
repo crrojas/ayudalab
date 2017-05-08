@@ -17,6 +17,8 @@ class AvisoTableSeeder extends Seeder
 
         factory(Aviso::class, 'inst1')->times(3)->create();
         factory(Aviso::class, 'inst2')->times(3)->create();
+        factory(Aviso::class, 'inst3')->times(3)->create();
+        factory(Aviso::class, 'inst4')->times(3)->create();
 
         $this->command->info('Avisos creados.');
     }

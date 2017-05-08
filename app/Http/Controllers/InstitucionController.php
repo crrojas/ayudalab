@@ -23,6 +23,9 @@ class InstitucionController extends Controller
     {
     	$institucion_conEspacios  = str_replace("_"," ",$institucion);
     	$institucion = Institucion::where('nombre',$institucion_conEspacios)->first();
+        $nom_institucion = $institucion->nombre;
+        $nom_institucion = str_replace(" ", "_", $nom_institucion);
+        $institucion['nom_institucion'] = $nom_institucion;
     	$instituciones = Controller::listado_instituciones();
 
 
@@ -31,7 +34,13 @@ class InstitucionController extends Controller
         //$ruta = $institucion->imagen();
 
         //dd($imagen);
-    	return view('institucion',compact('institucion', 'instituciones','imagen'));  
+
+        $avisos = Aviso::where('id_institucion','=',$institucion->id_institucion)->orderBy('created_at', 'desc')->paginate(6);
+    	foreach ($avisos as $key => $aviso) {
+    		$aviso['nom_institucion'] = $institucion->nom_institucion;
+    	}
+
+    	return view('institucion',compact('institucion', 'instituciones','imagen', 'avisos'));  
     }
 
 
