@@ -8,7 +8,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{$aviso->titulo}}" />
     <meta property="og:description" content="{{$aviso->descripcion}}" />
-    <meta property="og:image" content="{{public_path().$aviso->imagenes->first()->ruta}}" />
+    <meta property="og:image" content="{{$aviso->imagenes->first()->ruta}}" />
     <meta property="og:image:width" content="200" />
     <meta property="og:image:height" content="200" />
 
@@ -28,7 +28,6 @@
 
         <!-- Title -->
         <h1>{{$aviso->titulo}}</h1>
-        <h2>{{public_path().$aviso->imagenes->first()->ruta}}</h2>
         <!-- Author -->
         <p class="lead">
             por <a href="/institucion/{{$aux}}">{{ $institucion->nombre }}</a>
