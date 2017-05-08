@@ -3,14 +3,15 @@
     <title>SocialBook - {{ $institucion->nombre }} - {{$aviso->titulo}}</title>
         <!-- You can use Open Graph tags to customize link previews.
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-    <meta property="og:url"           content="{{url()->current()}}" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Your Website Title" />
-    <meta property="og:description"   content="Your description" />
-    @if($aviso->imagenes->first())
-    <meta property="og:image"         content="{{$aviso->imagenes->first()->ruta}}" />
-    @endif
-    
+    <meta property="og:url" content="{{url()->current()}}" />
+    <meta property="og:site_name" content="Socialbook">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="asdasdasd" />
+    <meta property="og:description" content="Asdasd" />
+    <meta property="og:image" content="{{$aviso->imagenes->first()->ruta}}" />
+    <meta property="og:image:width" content="820" />
+    <meta property="og:image:height" content="385" />
+
 
 @endsection
 
@@ -51,26 +52,11 @@
         <hr>
         <!-- Redes Sociales -->
         <div>
-            <!-- Load Facebook SDK for JavaScript -->
-            <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.9";
-            fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-
             <!-- Your share button code -->
-            <div class="fb-share-button" 
-                data-href="{{url()->current()}}" 
-                data-layout="button_count">
-            </div>
+            <div class="fb-share-button" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse">Compartir</a></div>
 
-            <div class="fb-share-button" data-href="http://localhost:8000/institucion/Comedor_San_Antonio/aviso/1" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8000%2Finstitucion%2FComedor_San_Antonio%2Faviso%2F1&amp;src=sdkpreparse">Compartir</a></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-size="large" data-dnt="true">Twittear</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-            <a href="https://twitter.com/share" class="twitter-share-button" data-via="cesar_ed22" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        
         </div>
 
        <hr>
@@ -79,15 +65,6 @@
 
         <hr>
         <!-- Comment -->
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
         <div class="fb-comments" data-href="http://ayudalab.dev"></div>
     </div>
 @endsection
