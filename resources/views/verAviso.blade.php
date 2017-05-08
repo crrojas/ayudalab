@@ -72,6 +72,6 @@
 
         <hr>
         <!-- Comment -->
-        <div class="fb-comments" data-href="http://ayudalab.dev"></div>
+        <div class="fb-comments" data-href="{{url()->current()}}" data-width="100%"></div>
     </div>
 @endsection
