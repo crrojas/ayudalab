@@ -3,18 +3,14 @@
 <title>SocialBook - {{ $institucion->nombre }}</title>
 @endsection
 
-@section('breadcrumb')
-<ol class="breadcrumb">
-    <li><a href="/" >Inicio</a></li>
-    <li><a href="/" class="active">{{ $institucion->nombre }}</a></li>
-</ol>
-@endsection
-
 @section('content')
 <div class="col-md-9">
-
+    <ol class="breadcrumb">
+        <li><a href="/" >Inicio</a></li>
+        <li><a href="/institucion/{{ $institucion->nom_institucion }}" class="active" >{{ $institucion->nombre }}</a></li>
+    </ol>
     <div class="thumbnail">
-        <img class="img-responsive" src="{{$imagen->ruta}}" alt="{{$imagen->descripcion}}" style="width: 800px;height: 300px;>
+        <img class="img-responsive" src="{{$imagen->ruta}}" alt="{{$imagen->descripcion}}" style="width: 800px;height: 300px;">
         <div class="caption-full">
             <h3>Mísión</h3>
             <p>{{ $institucion->mision }}</p>

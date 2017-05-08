@@ -3,12 +3,6 @@
 <title>SocialBook - Donde se reunen las ganas de ayudar</title>
 @endsection
 
-@section('breadcrumb')
-<ol class="breadcrumb">
-    <li><a href="/" class="active">Inicio</a></li>
-</ol>
-@endsection
-
 @section('content')
 
 <?php 

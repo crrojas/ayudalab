@@ -14,15 +14,15 @@
 
 @endsection
 
-@section('breadcrumb')
-<ol class="breadcrumb">
-    <li><a href="/" >Inicio</a></li>
-    <li><a href="/" class="active">{{ $institucion->nombre }}</a></li>
-</ol>
-@endsection
-
 @section('content')
     <div class="col-md-9">
+
+        <ol class="breadcrumb">
+            <li><a href="/" >Inicio</a></li>
+            <li><a href="/institucion/{{$aux}}" >{{ $institucion->nombre }}</a></li>
+            <li><a href="/institucion/{{$aux}}/aviso/{{$aviso->id_aviso}}" class="active">{{$aviso->titulo}}</a></li>
+        </ol>
+
         <!-- Blog Post -->
 
         <!-- Title -->

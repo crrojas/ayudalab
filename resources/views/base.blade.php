@@ -120,8 +120,6 @@
         <div class="row">
 
             <div class="col-md-3">
-
-                @yield('breadcrumb')
                 
                 <div class="list-group">
                     <p class="list-group-item active">Instituciones</p>
@@ -149,7 +147,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; SocialBook 2016</p>
+                    <p>Copyright &copy; SocialBook 2017 - Universidad Austral de Chile</p>
                 </div>
             </div>
         </footer>

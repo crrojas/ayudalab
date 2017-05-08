@@ -23,6 +23,9 @@ class InstitucionController extends Controller
     {
     	$institucion_conEspacios  = str_replace("_"," ",$institucion);
     	$institucion = Institucion::where('nombre',$institucion_conEspacios)->first();
+        $nom_institucion = $institucion->nombre;
+        $nom_institucion = str_replace(" ", "_", $nom_institucion);
+        $institucion['nom_institucion'] = $nom_institucion;
     	$instituciones = Controller::listado_instituciones();
 
 
