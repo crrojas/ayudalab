@@ -9,8 +9,8 @@
     <meta property="og:title" content="{{$aviso->titulo}}" />
     <meta property="og:description" content="{{$aviso->descripcion}}" />
     <meta property="og:image" content="{{$aviso->imagenes->first()->ruta}}" />
-    <meta property="og:image:width" content="200" />
-    <meta property="og:image:height" content="200" />
+    <meta property="og:image:width" content="838" />
+    <meta property="og:image:height" content="638" />
 
 
 @endsection
@@ -28,6 +28,7 @@
 
         <!-- Title -->
         <h1>{{$aviso->titulo}}</h1>
+
         <!-- Author -->
         <p class="lead">
             por <a href="/institucion/{{$aux}}">{{ $institucion->nombre }}</a>
@@ -52,9 +53,16 @@
         <!-- Redes Sociales -->
         <div>
             <!-- Your share button code -->
-            <div class="fb-share-button" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse">Compartir</a></div>
-
-            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-size="large" data-dnt="true">Twittear</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <!--<div class="fb-share-button" data-layout="button" data-size="large" data-mobile-iframe="true" style="vertical-align: baseline"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse">Compartir</a></div>
+            -->
+            <div class="fb-share-button"
+                 data-layout="button"
+                 data-size="large"
+                 data-mobile-iframe="true">
+            </div>
+            <div style="position: relative;
+                 left: 102px;
+                 top: -28px;"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-size="large" data-dnt="true" >Twittear</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
 
         </div>
 
