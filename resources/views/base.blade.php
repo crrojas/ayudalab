@@ -83,7 +83,7 @@
                         <a href="#">Quiénes Somos</a>
                     </li>
                     <li>
-                        <a href="#">Contacto</a>
+                        <a href="/contacto">Contacto</a>
                     </li>
                 </ul>
                 <!-- Right Side Of Navbar -->

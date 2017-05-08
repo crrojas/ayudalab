@@ -34,7 +34,13 @@ class InstitucionController extends Controller
         //$ruta = $institucion->imagen();
 
         //dd($imagen);
-    	return view('institucion',compact('institucion', 'instituciones','imagen'));  
+
+        $avisos = Aviso::where('id_institucion','=',$institucion->id_institucion)->orderBy('created_at', 'desc')->paginate(6);
+    	foreach ($avisos as $key => $aviso) {
+    		$aviso['nom_institucion'] = $institucion->nom_institucion;
+    	}
+
+    	return view('institucion',compact('institucion', 'instituciones','imagen', 'avisos'));  
     }
 
 

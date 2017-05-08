@@ -40,3 +40,5 @@ Route::post('formulario', 'StorageController@save');
 
 Route::get('imagen/{id}','StorageController@mostrarImagen');
 
+Route::get('/contacto','ContactController@index');
+
