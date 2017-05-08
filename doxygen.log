@@ -46,7 +46,7 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2017_04_12_195824_tabla_imagen_evento.php:7: warning: Compound TablaImagenEvento is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_12_23_025721_agregar_campo_rut_inst_a_user.php:7: warning: Compound AgregarCampoRutInstAUser is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:9: warning: Compound App::Institucion is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/ContactController.php:10: warning: Compound App::Http::Controllers::ContactController is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/ContactController.php:11: warning: Compound App::Http::Controllers::ContactController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2017_04_12_183436_tabla_noticia.php:7: warning: Compound TablaNoticia is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/tests/ExampleTest.php:8: warning: Compound ExampleTest is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2014_10_12_000000_create_users_table.php:7: warning: Compound CreateUsersTable is not documented.
@@ -111,7 +111,8 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/app/User.php:25: warning: Member $hidden (variable) of class App::User is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/User.php:30: warning: Unsupported xml/html tag <type> found
 /home/travis/build/tvargasvicencio/ayudalab/app/User.php:40: warning: Unsupported xml/html tag <type> found
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/ContactController.php:12: warning: Member index() (function) of class App::Http::Controllers::ContactController is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/ContactController.php:13: warning: Member index() (function) of class App::Http::Controllers::ContactController is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/ContactController.php:21: warning: Member enviarEmail(Request $request) (function) of class App::Http::Controllers::ContactController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Controller.php:18: warning: Member listado_instituciones() (function) of class App::Http::Controllers::Controller is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:224: warning: argument 'type' of command @param is not found in the argument list of HomeController::editarAviso($institucion,$aviso)
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:224: warning: argument 'type' of command @param is not found in the argument list of HomeController::editarAviso($institucion,$aviso)
