@@ -17,8 +17,8 @@ class CrearTablaInstitucion extends Migration
             $table->string('rut_inst');
             $table->string('nombre',60);
             $table->string('direccion',60)->nullable();
-            $table->string('mision', 200);
-            $table->string('vision', 200);
+            $table->string('mision', 500);
+            $table->string('vision', 500);
             $table->integer('telefono');
             $table->string('mail',50);
 
