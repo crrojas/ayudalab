@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="132b20ea-a76e-4e5d-9a2d-0932b2517c11" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/base.blade.php" afterPath="$PROJECT_DIR$/resources/views/base.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/verAviso.blade.php" afterPath="$PROJECT_DIR$/resources/views/verAviso.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +42,8 @@
       <file leaf-file-name="verAviso.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/verAviso.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="67" column="51" lean-forward="true" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+            <state relative-caret-position="299">
+              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -70,8 +68,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/resources/views/verAviso.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/base.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/verAviso.blade.php" />
       </list>
     </option>
   </component>
@@ -292,15 +290,15 @@
       <workItem from="1494256312631" duration="1671000" />
       <workItem from="1494278028973" duration="5224000" />
       <workItem from="1494285056180" duration="637000" />
-      <workItem from="1494294128714" duration="442000" />
+      <workItem from="1494294128714" duration="1135000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12820000" />
+    <option name="totallyTimeSpent" value="13513000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -506,8 +504,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/verAviso.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="67" column="51" lean-forward="true" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+        <state relative-caret-position="299">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding />
         </state>
       </provider>
