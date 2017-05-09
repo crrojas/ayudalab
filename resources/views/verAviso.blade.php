@@ -11,6 +11,10 @@
     <meta property="og:image" content="{{$aviso->imagenes->first()->ruta}}" />
     <meta property="og:image:width" content="838" />
     <meta property="og:image:height" content="638" />
+    <!-- Compartir con G+ -->
+    <script src="https://apis.google.com/js/platform.js" async defer>
+    {lang: 'es'}
+    </script>
 
 
 @endsection
@@ -63,8 +67,13 @@
             <div style="position: relative;
                  left: 102px;
                  top: -28px;"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-size="large" data-dnt="true" >Twittear</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+            <!-- Inserta esta etiqueta donde quieras que aparezca Botón Compartir. -->
+            <div class="g-plus" data-action="share" data-annotation="none" data-height="24" data-href="{{url()->current()}}"></div>
+
 
         </div>
+
+        
 
        <hr>
         <!-- Post Content -->
