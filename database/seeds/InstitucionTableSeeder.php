@@ -32,11 +32,8 @@ class InstitucionTableSeeder extends Seeder
             'direccion' => 'Simpson Nº 398, Valdivia, Chile',
             'mail' => 'hogarbelen@gmail.com',
             'telefono' => 2219909,
-            'mision' => "El Hogar Belén es una residencia de protección para preescolares que atiende a 30 niños y 
-                niñas de entre uno y seis años cuyos derechos han sido vulnerados y siendo todos los ingresos, a 
-                través de Medida de Protección desde Tribunales de Familia.",
-            "vision" => "Algún día, no serán necesarios los hogares, porque algún día los derechos de nuestros 
-                niños y niñas serán respetados completamente y viviremos en una sociedad mucho mejor. Este es nuestro sueño",
+            'mision' => "El Hogar Belén es una residencia de protección para preescolares que atiende a 30 niños y niñas de entre uno y seis años cuyos derechos han sido vulnerados y siendo todos los ingresos, a través de Medida de Protección desde Tribunales de Familia.",
+            "vision" => "Algún día, no serán necesarios los hogares, porque algún día los derechos de nuestros niños y niñas serán respetados completamente y viviremos en una sociedad mucho mejor. Este es nuestro sueño",
         ));
         $this->command->info('Institucion 2 creada.');
 
@@ -46,12 +43,8 @@ class InstitucionTableSeeder extends Seeder
             'direccion' => 'Calle Ramón Tapia S/N Yañez Zabala, Valdivia, Chile',
             'mail' => 'asd3@asdasd.com',
             'telefono' => 56632340900,
-            'mision' => "Proteger, educar y dignificar con esperanza a los niñas, niños y jóvenes de la Provincia de 
-                Valdivia más vulnerados en sus derechos fundamentales, a través del respeto, la confianza, el compromiso 
-                y el principio de probidad, trabajando en conjunto con la familia.",
-            "vision" => "Ser una institución cristiana que, a través de sus programas educativos innovadores, colabora 
-                en el mejoramiento de la calidad de vida y el desarrollo humano de los niños, niñas y adolescentes de la 
-                Provincia de Valdivia.",
+            'mision' => "Proteger, educar y dignificar con esperanza a los niñas, niños y jóvenes de la Provincia de Valdivia más vulnerados en sus derechos fundamentales, a través del respeto, la confianza, el compromiso y el principio de probidad, trabajando en conjunto con la familia.",
+            "vision" => "Ser una institución cristiana que, a través de sus programas educativos innovadores, colabora en el mejoramiento de la calidad de vida y el desarrollo humano de los niños, niñas y adolescentes de la Provincia de Valdivia.",
         ));
         $this->command->info('Institucion 3 creada.');
 
@@ -61,12 +54,8 @@ class InstitucionTableSeeder extends Seeder
             'direccion' => 'HAVERBECK 1820, Valdivia, Chile',
             'mail' => 'asd4@asdasd.com',
             'telefono' => 87538011,
-            'mision' => "La Agrupación Bella Existencia es una organización sin fines de lucro, cuyo principal objetivo 
-                es crear y mantener Talleres Protegidos para jóvenes con déficit intelectual que egresan de la Educación Especial. 
-                Comenzó a funcionar en Marzo del 2002, al alero de la Escuela Especial Walter Schmidt de Valdivia.",
-            "vision" => "Actualmente, trabajan 21 jóvenes en la confección de bolsas de papel con diseños corporativos según 
-                sea la demanda y además manualidades en género, lo que les ha ido permitiendo desarrollar una actividad de tipo 
-                productiva y comercial además de su desarrollo personal.",
+            'mision' => "La Agrupación Bella Existencia es una organización sin fines de lucro, cuyo principal objetivo es crear y mantener Talleres Protegidos para jóvenes con déficit intelectual que egresan de la Educación Especial. Comenzó a funcionar en Marzo del 2002, al alero de la Escuela Especial Walter Schmidt de Valdivia.",
+            "vision" => "Actualmente, trabajan 21 jóvenes en la confección de bolsas de papel con diseños corporativos según sea la demanda y además manualidades en género, lo que les ha ido permitiendo desarrollar una actividad de tipo productiva y comercial además de su desarrollo personal.",
         ));
         $this->command->info('Institucion 4 creada.');
 
