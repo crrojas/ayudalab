@@ -12,11 +12,8 @@
     <div class="thumbnail">
         <img class="img-responsive" src="{{$imagen->ruta}}" alt="{{$imagen->descripcion}}" style="width: 800px;height: 300px;">
         <div class="caption-full">
-            <h3>Mísión</h3>
+            <h3>Misión</h3>
             <p>{{ $institucion->mision }}</p>
-
-            <h3>Visión</h3>
-            <p>{{$institucion->vision }}</p>
 
             <h3>Visión</h3>
             <p>{{$institucion->vision }}</p>
