@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="132b20ea-a76e-4e5d-9a2d-0932b2517c11" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/base.blade.php" afterPath="$PROJECT_DIR$/resources/views/base.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/verAviso.blade.php" afterPath="$PROJECT_DIR$/resources/views/verAviso.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,11 +44,9 @@
       <file leaf-file-name="verAviso.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/verAviso.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="74" column="82" lean-forward="false" selection-start-line="74" selection-start-column="82" selection-end-line="74" selection-end-column="82" />
-              <folding>
-                <element signature="e#2439#2525#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="266">
+              <caret line="67" column="51" lean-forward="true" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,8 +54,8 @@
       <file leaf-file-name="base.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="86">
+              <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,8 +70,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/resources/views/base.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/verAviso.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/base.blade.php" />
       </list>
     </option>
   </component>
@@ -111,7 +110,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -212,6 +210,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -292,12 +291,13 @@
       <workItem from="1494212532591" duration="4138000" />
       <workItem from="1494256312631" duration="1671000" />
       <workItem from="1494278028973" duration="5224000" />
-      <workItem from="1494285056180" duration="406000" />
+      <workItem from="1494285056180" duration="637000" />
+      <workItem from="1494294128714" duration="442000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12147000" />
+    <option name="totallyTimeSpent" value="12820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -305,7 +305,7 @@
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.4945227" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2685325" sideWeight="0.4945227" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -338,6 +338,38 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env.example">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/verAviso.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1456">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -356,9 +388,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1638">
           <caret line="63" column="26" lean-forward="false" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
-          <folding>
-            <element signature="e#2439#2525#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -382,9 +412,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2439#2525#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -416,9 +444,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2439#2525#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -472,19 +498,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="86">
+          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/verAviso.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="74" column="82" lean-forward="false" selection-start-line="74" selection-start-column="82" selection-end-line="74" selection-end-column="82" />
-          <folding>
-            <element signature="e#2439#2525#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="266">
+          <caret line="67" column="51" lean-forward="true" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
