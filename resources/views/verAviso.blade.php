@@ -59,9 +59,9 @@
                  data-layout="button"
                  data-size="large"
                  data-mobile-iframe="false">
-                <button class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse">
+                <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse">
                     Compartir
-                </button>
+                </a>
             </div>
             <div id="fb-root"></div>
             <script>(function(d, s, id) {
