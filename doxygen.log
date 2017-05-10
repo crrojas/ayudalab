@@ -149,6 +149,7 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:54: warning: Unsupported xml/html tag <type> found
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:177: warning: Unsupported xml/html tag <type> found
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:116: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomepageController.php:36: warning: Member quienesSomos() (function) of class App::Http::Controllers::HomepageController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomepageController.php:18: warning: Unsupported xml/html tag <type> found
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:14: warning: argument 'type' of command @param is not found in the argument list of InstitucionController::index($institucion)
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/InstitucionController.php:19: warning: Unsupported xml/html tag <type> found
