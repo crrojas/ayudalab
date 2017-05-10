@@ -10,7 +10,7 @@
         <li><a href="/institucion/{{ $institucion->nom_institucion }}" class="active" >{{ $institucion->nombre }}</a></li>
     </ol>
     <div class="thumbnail">
-        <img class="img-responsive" src="{{$imagen->ruta}}" alt="{{$imagen->descripcion}}" style="width: 800px;height: 300px;">
+        <img class="img-responsive" src="{{$imagen->ruta}}" alt="{{$imagen->descripcion}}" style="max-width:50%">
         <div class="caption-full">
             <h3>Misión</h3>
             <p>{{ $institucion->mision }}</p>

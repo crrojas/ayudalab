@@ -39,7 +39,7 @@
                     @foreach ($instituciones as $key => $institucion)
                         @if($cont==0)
                             <div class="item active">
-                                <img class="slide-image" style="width: 800px;height: 300px;" src="{{$institucion->imagen->ruta}}" alt="">
+                                <img class="slide-image" style="width: 100%;height: 300px;" src="{{$institucion->imagen->ruta}}" alt="">
                             </div>
 
                             <?php  
@@ -47,7 +47,7 @@
                             ?>
                         @else
                             <div class="item">
-                                <img class="slide-image" style="width: 800px;height: 300px;" src="{{$institucion->imagen->ruta}}" alt="">
+                                <img class="slide-image" style="width: 100%;height: 300px;" src="{{$institucion->imagen->ruta}}" alt="">
                             </div>
                             <?php  
                             $cont= $cont+1;
