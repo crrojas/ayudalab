@@ -23,8 +23,8 @@ class ImagenTableSeeder extends Seeder
         $imagen->save();
 
        	$imagen = new Imagen(array(
-        	'ruta' => '/almacenamiento_imagenes/2.jpg',
-        	'descripcion' => 'foto de vamo a calmarno 2',
+        	'ruta' => '/almacenamiento_imagenes/HogarBelen/HogarBelen.jpg',
+        	'descripcion' => 'Institución Hogar Belen',
             'id_institucion' => 2,
        	));
         $institucion = Institucion::where('id_institucion','=','2')->first();
@@ -32,8 +32,8 @@ class ImagenTableSeeder extends Seeder
         $imagen->save();
 
         $imagen = new Imagen(array(
-        	'ruta' => '/almacenamiento_imagenes/2.jpg',
-        	'descripcion' => 'foto de vamo a calmarno 2',
+        	'ruta' => '/almacenamiento_imagenes/CIFAN/CIFAN.png',
+        	'descripcion' => 'Institución CIFAN',
             'id_institucion' => 3,
        	));
         $institucion = Institucion::where('id_institucion','=','3')->first();
@@ -41,8 +41,8 @@ class ImagenTableSeeder extends Seeder
         $imagen->save();
 
         $imagen = new Imagen(array(
-        	'ruta' => '/almacenamiento_imagenes/2.jpg',
-        	'descripcion' => 'foto de vamo a calmarno 2',
+        	'ruta' => '/almacenamiento_imagenes/HogarBellaExistencia/HogarBellaExistencia.jpg',
+        	'descripcion' => 'Hogar Bella Existencia',
             'id_institucion' => 4,
        	));
         $institucion = Institucion::where('id_institucion','=','4')->first();

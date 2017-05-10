@@ -16,13 +16,13 @@ class InstitucionTableSeeder extends Seeder
         DB::table('institucion')->delete();
 
         $institucion = Institucion::create(array(
-        	'rut_inst' => '81.534.189-5',
+        	'rut_inst' => '70.355.300­1,',
         	'nombre' => 'Comedor San Antonio',
         	'direccion' => 'Pérez Rosales #833, Valdivia, Chile',
         	'mail' => 'asda@asdasd.com',
         	'telefono' => 98123741,
-        	'mision' => "asdasdjalsd",
-        	"vision" => "alskdmalskdmlaskdlasd",
+        	'mision' => "El comedor San Antonio tiene como misión ser un lugar de acogida para la comunidad cristiana, principalmente personas en situación de calle, gente de pocos recursos, que necesita comida, ropa, etc.",
+        	"vision" => "La visión de la institución por ahora se enfoca en ser un centro de acogida para toda la comunidad cristiana, la cual pueda ayudar y cobijar a las personas los 365 días del año.",
        	));
         $this->command->info('Institucion creada.');
 
@@ -33,7 +33,7 @@ class InstitucionTableSeeder extends Seeder
             'mail' => 'hogarbelen@gmail.com',
             'telefono' => 2219909,
             'mision' => "El Hogar Belén es una residencia de protección para preescolares que atiende a 30 niños y niñas de entre uno y seis años cuyos derechos han sido vulnerados y siendo todos los ingresos, a través de Medida de Protección desde Tribunales de Familia.",
-            "vision" => "Algún día, no serán necesarios los hogares, porque algún día los derechos de nuestros niños y niñas serán respetados completamente y viviremos en una sociedad mucho mejor. Este es nuestro sueño",
+            "vision" => "Algún día, no serán necesarios los hogares, porque algún día los derechos de nuestros niños y niñas serán respetados completamente y viviremos en una sociedad mucho mejor. Este es nuestro sueño.",
         ));
         $this->command->info('Institucion 2 creada.');
 

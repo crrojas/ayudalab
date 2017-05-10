@@ -26,7 +26,6 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 });
 
 $factory->defineAs(App\Aviso::class, 'inst1', function (Faker\Generator $faker){
-	$institucion = Institucion::where('rut_inst','=','81.534.189-5')->first();
 	return[
  		'titulo' => $faker->sentence(5),
  		'descripcion' => $faker->sentence(15),
@@ -35,7 +34,6 @@ $factory->defineAs(App\Aviso::class, 'inst1', function (Faker\Generator $faker){
 });
 
 $factory->defineAs(App\Aviso::class, 'inst2', function (Faker\Generator $faker){
-	$institucion = Institucion::where('rut_inst','=','92.164.732-1')->first();
 	return[
  		'titulo' => $faker->sentence(5),
  		'descripcion' => $faker->sentence(15),
@@ -44,7 +42,6 @@ $factory->defineAs(App\Aviso::class, 'inst2', function (Faker\Generator $faker){
 });
 
 $factory->defineAs(App\Aviso::class, 'inst3', function (Faker\Generator $faker){
-	$institucion = Institucion::where('rut_inst','=','92.164.732-2')->first();
 	return[
  		'titulo' => $faker->sentence(5),
  		'descripcion' => $faker->sentence(15),
@@ -53,7 +50,6 @@ $factory->defineAs(App\Aviso::class, 'inst3', function (Faker\Generator $faker){
 });
 
 $factory->defineAs(App\Aviso::class, 'inst4', function (Faker\Generator $faker){
-	$institucion = Institucion::where('rut_inst','=','92.164.732-3')->first();
 	return[
  		'titulo' => $faker->sentence(5),
  		'descripcion' => $faker->sentence(15),
