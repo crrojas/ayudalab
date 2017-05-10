@@ -14,8 +14,8 @@ class ImagenTableSeeder extends Seeder
     public function run()
     {
         $imagen = new Imagen(array(
-        	'ruta' => '/almacenamiento_imagenes/1.jpg',
-        	'descripcion' => 'foto de vamo a calmarno 1',
+        	'ruta' => '/almacenamiento_imagenes/SanAntonio/SanAntonio3.jpg',
+        	'descripcion' => 'Comedor San Antonio',
             'id_institucion' => 1,
        	));
         $institucion = Institucion::where('id_institucion','=','1')->first();
