@@ -33,4 +33,9 @@ class HomepageController extends Controller
 
     }
 
+	public function quienesSomos(){
+		$instituciones = Controller::listado_instituciones();
+		return view('quienesSomos', compact('instituciones'));
+	}
+
 }

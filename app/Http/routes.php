@@ -43,3 +43,5 @@ Route::get('imagen/{id}','StorageController@mostrarImagen');
 Route::get('/contacto','ContactController@index');
 Route::post('/contacto','ContactController@enviarEmail');
 
+Route::get('/quienes-somos', 'HomepageController@quienesSomos');
+
