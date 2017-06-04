@@ -37,13 +37,16 @@ Warning: The selected output language "spanish" has not been updated
 since release 1.7.5.  As a result some sentences may appear in English.
 
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2017_04_11_032423_tabla_imagen.php:7: warning: Compound TablaImagen is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/migrations/2017_06_04_145212_create_user_roles_table.php:7: warning: Compound CreateUserRolesTable is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/seeds/ImagenTableSeeder.php:8: warning: Compound ImagenTableSeeder is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/seeds/DatabaseSeeder.php:9: warning: Compound DatabaseSeeder is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/seeds/AvisoTableSeeder.php:8: warning: Compound AvisoTableSeeder is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Aviso.php:8: warning: Compound App::Aviso is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/seeds/RolesTableSeeder.php:7: warning: Compound RolesTableSeeder is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/tests/VerInstitucionesTest.php:8: warning: Compound VerInstitucionesTest is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/ImagenEvento.php:9: warning: Compound App::ImagenEvento is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2017_04_12_195824_tabla_imagen_evento.php:7: warning: Compound TablaImagenEvento is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Role.php:8: warning: Compound App::Role is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_12_23_025721_agregar_campo_rut_inst_a_user.php:7: warning: Compound AgregarCampoRutInstAUser is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Institucion.php:9: warning: Compound App::Institucion is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/ContactController.php:11: warning: Compound App::Http::Controllers::ContactController is not documented.
@@ -56,6 +59,7 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomepageController.php:14: warning: Compound App::Http::Controllers::HomepageController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Auth/AuthController.php:12: warning: Compound App::Http::Controllers::Auth::AuthController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/seeds/InstitucionTableSeeder.php:8: warning: Compound InstitucionTableSeeder is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/migrations/2017_06_04_145038_create_roles_table.php:7: warning: Compound CreateRolesTable is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Imagen.php:9: warning: Compound App::Imagen is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2014_10_12_100000_create_password_resets_table.php:7: warning: Compound CreatePasswordResetsTable is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/StorageController.php:12: warning: Compound App::Http::Controllers::StorageController is not documented.
@@ -66,7 +70,7 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_12_26_184042_agregar_campo_booleano_superuser_tabla_user.php:7: warning: Compound AgregarCampoBooleanoSuperuserTablaUser is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_11_07_194019_crear_tabla_aviso.php:7: warning: Compound CrearTablaAviso is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/database/migrations/2016_11_07_192547_crear_tabla_institucion.php:7: warning: Compound CrearTablaInstitucion is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/database/seeds/UserTableSeeder.php:6: warning: Compound UserTableSeeder is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/database/seeds/UserTableSeeder.php:10: warning: Compound UserTableSeeder is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:16: warning: Compound App::Http::Controllers::HomeController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/User.php:12: warning: documented function `array' was not declared or defined.
 /home/travis/build/tvargasvicencio/ayudalab/app/User.php:21: warning: documented function `array' was not declared or defined.
@@ -107,6 +111,12 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:11: warning: Member $fillable (variable) of class App::Noticia is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:15: warning: Unsupported xml/html tag <type> found
 /home/travis/build/tvargasvicencio/ayudalab/app/Noticia.php:25: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Role.php:13: warning: Member users() (function) of class App::Role is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/Role.php:11: warning: Member $fillable (variable) of class App::Role is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/User.php:48: warning: Member roles() (function) of class App::User is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/User.php:55: warning: Member authorizeRoles($roles) (function) of class App::User is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/User.php:62: warning: Member hasAnyRole($roles) (function) of class App::User is not documented.
+/home/travis/build/tvargasvicencio/ayudalab/app/User.php:77: warning: Member hasRole($role) (function) of class App::User is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/User.php:16: warning: Member $fillable (variable) of class App::User is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/User.php:25: warning: Member $hidden (variable) of class App::User is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/User.php:30: warning: Unsupported xml/html tag <type> found
@@ -114,12 +124,12 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/ContactController.php:13: warning: Member index() (function) of class App::Http::Controllers::ContactController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/ContactController.php:21: warning: Member enviarEmail(Request $request) (function) of class App::Http::Controllers::ContactController is not documented.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/Controller.php:18: warning: Member listado_instituciones() (function) of class App::Http::Controllers::Controller is not documented.
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:224: warning: argument 'type' of command @param is not found in the argument list of HomeController::editarAviso($institucion,$aviso)
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:224: warning: argument 'type' of command @param is not found in the argument list of HomeController::editarAviso($institucion,$aviso)
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:230: warning: Unsupported xml/html tag <type> found
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:224: warning: The following parameters of App::Http::Controllers::HomeController::editarAviso($institucion,$aviso) are not documented:
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:223: warning: argument 'type' of command @param is not found in the argument list of HomeController::editarAviso($institucion,$id_aviso)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:223: warning: argument 'type' of command @param is not found in the argument list of HomeController::editarAviso($institucion,$id_aviso)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:229: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:223: warning: The following parameters of App::Http::Controllers::HomeController::editarAviso($institucion,$id_aviso) are not documented:
   parameter 'institucion'
-  parameter 'aviso'
+  parameter 'id_aviso'
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:64: warning: argument 'Illuminate' of command @param is not found in the argument list of HomeController::editarInformacionInstitucional(Request $request)
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:64: warning: argument 'Http' of command @param is not found in the argument list of HomeController::editarInformacionInstitucional(Request $request)
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:64: warning: argument 'Request' of command @param is not found in the argument list of HomeController::editarInformacionInstitucional(Request $request)
@@ -132,12 +142,12 @@ since release 1.7.5.  As a result some sentences may appear in English.
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:204: warning: Unsupported xml/html tag <type> found
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:198: warning: The following parameters of App::Http::Controllers::HomeController::eliminarAviso(Request $request) are not documented:
   parameter 'request'
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:293: warning: Unsupported xml/html tag <type> found
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:248: warning: argument 'Illuminate' of command @param is not found in the argument list of HomeController::guardarEditarAviso(Request $request)
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:248: warning: argument 'Http' of command @param is not found in the argument list of HomeController::guardarEditarAviso(Request $request)
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:248: warning: argument 'Request' of command @param is not found in the argument list of HomeController::guardarEditarAviso(Request $request)
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:256: warning: Unsupported xml/html tag <type> found
-/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:248: warning: The following parameters of App::Http::Controllers::HomeController::guardarEditarAviso(Request $request) are not documented:
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:292: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:247: warning: argument 'Illuminate' of command @param is not found in the argument list of HomeController::guardarEditarAviso(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:247: warning: argument 'Http' of command @param is not found in the argument list of HomeController::guardarEditarAviso(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:247: warning: argument 'Request' of command @param is not found in the argument list of HomeController::guardarEditarAviso(Request $request)
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:255: warning: Unsupported xml/html tag <type> found
+/home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:247: warning: The following parameters of App::Http::Controllers::HomeController::guardarEditarAviso(Request $request) are not documented:
   parameter 'request'
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:126: warning: argument 'Illuminate' of command @param is not found in the argument list of HomeController::guardarNuevoAviso(Request $request)
 /home/travis/build/tvargasvicencio/ayudalab/app/Http/Controllers/HomeController.php:126: warning: argument 'Http' of command @param is not found in the argument list of HomeController::guardarNuevoAviso(Request $request)

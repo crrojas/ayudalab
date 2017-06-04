@@ -5,5 +5,7 @@ var searchData=
   ['creartablaaviso',['CrearTablaAviso',['../class_crear_tabla_aviso.html',1,'']]],
   ['creartablainstitucion',['CrearTablaInstitucion',['../class_crear_tabla_institucion.html',1,'']]],
   ['createpasswordresetstable',['CreatePasswordResetsTable',['../class_create_password_resets_table.html',1,'']]],
+  ['createrolestable',['CreateRolesTable',['../class_create_roles_table.html',1,'']]],
+  ['createuserrolestable',['CreateUserRolesTable',['../class_create_user_roles_table.html',1,'']]],
   ['createuserstable',['CreateUsersTable',['../class_create_users_table.html',1,'']]]
 ];

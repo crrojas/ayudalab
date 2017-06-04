@@ -1,5 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$class_test_case.html" title="TestCase" alt="" coords="7,32,84,61"/>
-<area shape="rect" id="node3" href="$class_example_test.html" title="ExampleTest" alt="" coords="156,5,255,35"/>
-<area shape="rect" id="node5" href="$class_ver_instituciones_test.html" title="VerInstitucionesTest" alt="" coords="135,59,276,88"/>
+<area shape="rect" id="node1" href="$class_roles_table_seeder.html" title="RolesTableSeeder" alt="" coords="7,5,135,35"/>
 </map>
