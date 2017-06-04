@@ -35,10 +35,10 @@ class HomeController extends Controller
         {
             // El usuario está autenticado
             $user = Auth::user();
-            $institucion = Institucion::where('rut_inst',$user->rut_inst)->first();
+            $institucion = Institucion::where('id_institucion',$user->id_institucion)->first();
             $instituciones = Controller::listado_instituciones();
             foreach ($instituciones as $key => $institucion) {
-                if ($user->rut_inst == $institucion->rut_inst) {
+                if ($user->id_institucion == $institucion->id_institucion) {
                     $user_inst = $institucion;
                     $user_inst['nom_institucion'] = $institucion->nom_institucion;
                 }
@@ -95,7 +95,7 @@ class HomeController extends Controller
         }
         else{
             try {
-                $institucion = Institucion::where('rut_inst',$user_inst->rut_inst)->first();
+                $institucion = Institucion::where('id_institucion',$user_inst->id_institucion)->first();
                 $institucion->nombre = $request->nombre;
                 $institucion->direccion = $request->direccion;
                 $institucion->mision = $request->mision;
@@ -156,8 +156,8 @@ class HomeController extends Controller
                 $aviso = new Aviso;
                 $aviso->titulo = $request->input('titulo');
                 $aviso->descripcion = $request->input('descripcion');
-                $aviso->img = "imagen";
-                $aviso->rut_inst = $user_inst->rut_inst;
+                //$aviso->img = "imagen";
+                $aviso->id_institucion = $user_inst->id_institucion;
                 $aviso->user_id = $user->id;
                 $aviso->save();
                 return Response::json(array('success' => true, 'msg' => "Aviso creado correctamente"), 200); //200 = Ok
@@ -183,10 +183,10 @@ class HomeController extends Controller
         $user_inst = $elements[1];
         $instituciones = Controller::listado_instituciones();
 
-        $avisos = Aviso::where('rut_inst',$user->rut_inst)->orderBy('created_at', 'desc')->paginate(6);
+        $avisos = Aviso::where('id_institucion',$user->id_institucion)->orderBy('created_at', 'desc')->paginate(6);
         foreach ($avisos as $key => $aviso) {
             foreach ($instituciones as $key => $institucion) {
-                if ($aviso->rut_inst == $institucion->rut_inst) {
+                if ($aviso->id_institucion == $institucion->id_institucion) {
                     $aviso['nom_institucion'] = $institucion->nom_institucion;
                 }
             }
@@ -208,9 +208,8 @@ class HomeController extends Controller
         $elements = HomeController::index();
         $user = $elements[0];
         $user_inst = $elements[1];
-        
         try {
-            $aviso = Aviso::where('id',$request->id)->where('rut_inst',$user_inst->rut_inst);
+            $aviso = Aviso::where('id_aviso',$request->id_aviso)->where('id_institucion',$user_inst->id_institucion)->first();
             $aviso->delete();
             return Response::json(array('success' => true, 'msg' => "Aviso eliminado correctamente"), 200); //200 = Ok
         } catch (Exception $e) {
@@ -230,11 +229,11 @@ class HomeController extends Controller
      *
      * @return     <type>  ( description_of_the_return_value )
      */
-    public function editarAviso($institucion,$aviso){
+    public function editarAviso($institucion,$id_aviso){
         $elements = HomeController::index();
         $user = $elements[0];
         $user_inst = $elements[1];
-        $aviso = Aviso::where('id',$aviso)->where('rut_inst',$user_inst->rut_inst)->first();
+        $aviso = Aviso::where('id_aviso',$id_aviso)->where('id_institucion',$user_inst->id_institucion)->first();
         if ($aviso) {
             return view('editarAviso',compact('user', 'user_inst','aviso'));
         }
@@ -276,7 +275,7 @@ class HomeController extends Controller
         }
         else{
             try {
-                $aviso = Aviso::where('id',$request->id)->where('rut_inst',$user_inst->rut_inst)->first();
+                $aviso = Aviso::where('id_aviso',$request->id)->where('id_institucion',$user_inst->id_institucion)->first();
                 $aviso->titulo = $request->titulo;
                 $aviso->descripcion = $request->descripcion;
                 $aviso->save();

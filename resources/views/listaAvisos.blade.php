@@ -15,12 +15,12 @@
             <div class="thumbnail">
                 <img src="http://placehold.it/320x150" alt="">
                 <div class="caption">
-                    <h4><a href="/institucion/{{$aviso->nom_institucion}}/aviso/{{$aviso->id}}">{{ $aviso->titulo }}</a>
+                    <h4><a href="/institucion/{{ $aviso->nom_institucion }}/aviso/{{ $aviso->id_aviso }}">{{ $aviso->titulo }}</a>
                     </h4>
                     <p>{{ $aviso->descripcion }}</p>
                 </div>
-                <a type="button" href="/dashboard/institucion/{{$aviso->nom_institucion}}/aviso/{{$aviso->id}}" class="btn btn-primary btn-block">Editar</a>
-                <button type="button" onclick="confirmar('{{$aviso->id}}','{{$aviso->nom_institucion}}')" class="btn btn-danger btn-block">Eliminar</button>
+                <a type="button" href="/dashboard/institucion/{{ $aviso->nom_institucion }}/aviso/{{ $aviso->id_aviso }}" class="btn btn-primary btn-block">Editar</a>
+                <button type="button" onclick="confirmar('{{ $aviso->id_aviso }}','{{ $aviso->nom_institucion }}')" class="btn btn-danger btn-block">Eliminar</button>
             </div>
         </div>      
         @endforeach
@@ -59,7 +59,7 @@
      */
     function eliminarAviso(id,nom_institucion){
         var nom = nom_institucion;
-        data = {"id" : id, "nom_institucion" : nom};
+        data = {"id_aviso" : id, "nom_institucion" : nom};
         var url = window.location.pathname;
         $.ajax({
             headers: { 'X-CSRF-TOKEN': $('input[name="_token"]').attr('value') },

@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
         $this->call(AvisoTableSeeder::class);
         $this->call(ImagenTableSeeder::class);
         $this->call(ImagenAviso::class);
+        $this->call(RolesTableSeeder::class);
+        $this->call(UserTableSeeder::class);
 
         $this->command->info('SocialBook app seeds finished.');
 

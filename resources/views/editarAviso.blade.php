@@ -11,7 +11,7 @@
             <div id="tituloGroup" class="form-group">
                 <label for="titulo" class="col-md-4 control-label">Título</label>
 
-                <input id="id" type="hidden" class="form-control" name="id" value="{{$aviso->id}}">
+                <input id="id" type="hidden" class="form-control" name="id" value="{{$aviso->id_aviso}}">
 
                 <div class="col-md-6">
                     <input id="titulo" type="text" class="form-control" name="titulo" value="{{$aviso->titulo}}">

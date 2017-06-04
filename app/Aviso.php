@@ -8,7 +8,7 @@ class Aviso extends Model
 {
     protected $table = 'aviso';
     protected $primaryKey="id_aviso";
-    protected $fillable = ['descripcion', 'titulo', 'rut_inst', 'user_id'];
+    protected $fillable = ['descripcion', 'titulo', 'id_institucion', 'user_id'];
 
     /**
      * Indica que un Aviso pertenece a una Institucion
